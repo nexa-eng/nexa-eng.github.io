@@ -107,7 +107,7 @@ params:
     # Enable and configure blog posts
     blog:
       enable: true
-      showAuthor: true # shows the author of post (defaults true)
+      showAuthor: false # shows the author of post (defaults true)
       # Share post on different social media
       shareButtons:
         facebook: true
@@ -123,7 +123,7 @@ params:
 
     # Enable & configure "Notes" features
     notes:
-      enable: true
+      enable: false
 
     # Enable comment feature. There, should be only one of them.
     comment:

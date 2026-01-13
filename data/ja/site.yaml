@@ -18,10 +18,10 @@ customMenus:
     hideFromNavbar: false
     showOnFooter: true
 
-#  - name: Posts
-#    url: /posts/
-#    hideFromNavbar: true
-#    showOnFooter: false
+  - name: Posts
+    url: /posts/
+    hideFromNavbar: false
+    showOnFooter: true
 
   # Privacy Policy menu
   - name: Privacy Policy
