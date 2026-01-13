@@ -4,9 +4,9 @@
     --secondary-color: #ddfff5;
     --text-color-light: #fff;
     --border-color: #ddd;
-    --heading-font-size-large: 2.5rem;
-    --heading-font-size-medium: 2rem;
-    --heading-font-size-small: 1.75rem;
+    --heading-font-size-large: 2rem;
+    --heading-font-size-medium: 1.6rem;
+    --heading-font-size-small: 1.5rem;
 }
 
 p {
@@ -30,7 +30,8 @@ h1,
 h2,
 h3 {
     font-weight: bold;
-    margin: 2rem 0; /* 上下に余白を追加 */
+    margin-top: 3rem !important;
+    margin-bottom: 1rem;
     line-height: 2;
 }
 
@@ -53,16 +54,16 @@ h2 {
     border-left: solid 15px var(--primary-color);
     border-bottom: solid 2px var(--primary-color);
     color: var(--text-color-light) !important;
-    padding: 1rem 2rem !important;
+    padding: 1rem 1rem !important;
     text-align: left;
 }
 
 /* h3スタイル */
 h3 {
     font-size: var(--heading-font-size-small);
-    padding: 0.5rem 2.5rem 0.5rem 2.5rem; /* 左側の余白を1.5rem→2.5remに拡大 */
+    padding: 0.5rem 1rem !important; /* 左側の余白を1.5rem→2.5remに拡大 */
     background: transparent;
-    border-left: solid 10px var(--primary-color);
+    border-left: solid 8px var(--primary-color);
 }
 
 /* 画像スタイル */
@@ -90,6 +91,8 @@ hr {
 /* テーブルスタイル */
 table {
     border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 table th,

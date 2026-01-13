@@ -26,6 +26,17 @@
 
 ## コマンド
 
+HTMLを出力。GitHubで公開するなら不要
 hugo --minify
+
+HUGOサーバーを立ち上げ。通常はこれで修正を確認する。
 hugo server -D
+
+新しくポストを作成する場合
 hugo new posts/new-post.md
+
+## 見た目を変える
+
+- 文章等はdataフォルダの中身を修正
+- そもそもの見た目をいじるならlayouts/partials/sectionsのHTMLを直接いじる
+- 言語間で対応ワードの差異がたまにある

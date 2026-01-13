@@ -7,7 +7,7 @@ menu:
     name: Introduction
     identifier: introduction
     parent: category
-    weight: 10
+    weight: 910
 tags: ["Basic", "Multi-lingual"]
 categories: ["Basic"]
 ---

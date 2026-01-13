@@ -7,7 +7,7 @@ menu:
     name: Markdown Sample
     identifier: markdown
     parent: category
-    weight: 30
+    weight: 930
 author:
   name: Jessica Jonas
   image: /images/author/jessica.png

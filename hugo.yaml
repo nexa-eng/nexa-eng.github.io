@@ -29,7 +29,7 @@ languages:
   ja:
     languageCode: ja
     languageName: 日本語
-    title: "Nexa Engineering株式会社"
+    title: "Nexa Engineering"
     weight: 1
 #  bn:
 #    languageCode: bn
@@ -106,7 +106,7 @@ params:
 
     # Enable and configure blog posts
     blog:
-      enable: true
+      enable: false
       showAuthor: false # shows the author of post (defaults true)
       # Share post on different social media
       shareButtons:

@@ -9,13 +9,13 @@ image: "images/author/iam.png"
 contactInfo:
   email: "contact@nexa-eng.com"
 #  phone: "+0123456789"
-  github: nexa-eng
+  github: "nexa-eng"
 #  linkedin: johndoe
 #  researchgate: john-doe
 
 # some summary about what you do
 summary:
-  - 中小企業に特化した「手の届くIT」を提供します    
+  - 「御社専属エンジニア」として現場に潜り課題に挑みます    
   - AIエージェントで業務の自動化を支援します    
   - ダッシュボードによるデータ可視化で経営判断を支援します    
-  - ちょっとしたIT相談もお気軽にどうぞ。小さな検証からお手伝いします    
+  - ちょっとしたIT相談もお気軽にどうぞ
