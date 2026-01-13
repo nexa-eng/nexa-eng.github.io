@@ -1,7 +1,7 @@
 # Copyright Information
 copyright: |
   © 2020 hugo-toha (Theme)  
-  © 2025 Nexa Engineering (Content)
+  © 2025 Nexa Engineering Co., Ltd. (Content)
 
 # Footer Disclaimer
 disclaimer: "This site uses the hugo-toha theme under the MIT license. See LICENSE for details."
@@ -31,8 +31,8 @@ customMenus:
 
 # OpenGraph Metadata
 openGraph:
-  title: Nexa Engineering
+  title: Nexa Engineering Co., Ltd.
   type: website
-  description: Portfolio of Software Development and personal blog of Kentaro Ichihara at Nexa Engineering.
+  description: Nexa Engineering: Your dedicated DX partner for SMEs. We provide 'accessible IT' including AI agents for real estate automation and dashboards for steel and manufacturing industries. Leveraging field-proven expertise, we deliver practical solutions that transform your business operations.
   image: images/author/ken.png
   url: https://nexa-eng.com

@@ -1,7 +1,7 @@
 baseURL: https://nexa-eng.com
 
-languageCode: en
-title: "Nexa Engineering"
+languageCode: ja
+title: "Nexa Engineering株式会社"
 
 # Use Hugo modules to add theme
 module:
@@ -23,7 +23,13 @@ languages:
   en:
     languageCode: en
     languageName: English
-    title: "Nexa Engineering"
+    title: "Nexa Engineering Co., Ltd."
+    weight: 2
+# 追加: 日本語設定
+  ja:
+    languageCode: ja
+    languageName: 日本語
+    title: "Nexa Engineering株式会社"
     weight: 1
 #  bn:
 #    languageCode: bn
@@ -70,7 +76,7 @@ params:
     favicon: /images/site/favicon.png
 
   # GitHub repo of your site
-  gitRepo: https://github.com/ichiken-usa/ichiken-usa.github.io
+  gitRepo: https://github.com/nexa-eng/nexa-eng.github.io
   # Default branch of your Git repo
   gitBranch: main
 
