@@ -8,7 +8,7 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Representative / Freelance Engineer
+designation: 中小企業のDXに伴走するパートナー
 # your company information
 company:
   name: Nexa Engineering
@@ -20,12 +20,11 @@ company:
 
 # a summary about you
 summary: >
-  At Nexa Engineering, we transform complex operational challenges into streamlined digital assets. We provide value through three core pillars: <br><br>
+  私たちNexa Engineeringは、以下の3つの柱を通じてお客様に価値を提供します：<br><br>
   
-  <b>1. Strategic Automation:</b> Custom AI agents that handle repetitive administrative tasks, allowing your team to focus on high-value work. <br>
-  <b>2. Data-Driven Decisions:</b> Real-time management dashboards that turn fragmented data into actionable insights for the Real Estate and Manufacturing sectors. <br>
-  <b>3. Practical DX:</b> No over-engineering. We deliver high-impact, cost-effective solutions that are easy to adopt on the front lines.
-
+  <b>1. 先進的オートメーション：</b> 独自のAIエージェントが繰り返しの事務作業を自動化。貴社のチームがより創造的で価値の高い業務に集中できる環境を構築します。<br>
+  <b>2. データに基づく意思決定：</b> 現場に散らばったデータを統合し、リアルタイムで経営状況を可視化。次のアクションにつながる「生きた情報」を提供します。<br>
+  <b>3. 実践的なDX：</b> 過剰なシステム開発（オーバーエンジニアリング）は行いません。現場が使いやすく、費用対効果の高い「本当に役立つ」ソリューションを機動力を活かして迅速に導入します。
 # your social links
 # give as many as you want. use font-awesome for the icons.
 socialLinks:
