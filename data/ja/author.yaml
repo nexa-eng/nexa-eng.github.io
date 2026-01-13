@@ -1,9 +1,9 @@
 # some information about you
 name: "Nexa Engineering株式会社"
-nickname: "Nexa Engineering株式会社"
+nickname: "Nexa Engineering"
 # greeting message before your name. it will default to "Hi! I am" if not provided
 greeting: "Welcome to"
-image: "images/author/ken.png"
+image: "images/author/iam.png"
 # give your some contact information. they will be used in the footer
 contactInfo:
   email: "contact@nexa-eng.com"
@@ -15,5 +15,6 @@ contactInfo:
 # some summary about what you do
 summary:
   - 中小企業に特化した「手の届くIT」を提供します。
-  - AIエージェントや経営ダッシュボードで、業務の自動化と可視化を実現。
-  - 15年の製造現場経験を持つエンジニアが、実用的なDXを伴走支援します。
+  - AIエージェントで業務の自動化を支援します。
+  - ダッシュボードによるデータ可視化で経営判断を支援します。
+  - ちょっとしたIT相談もお気軽にどうぞ。小さな検証からお手伝いします。
