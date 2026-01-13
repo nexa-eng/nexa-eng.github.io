@@ -1,8 +1,6 @@
 ---
 title: Privacy Policy
 date: 2025-09-12
-authors:
-  - admin
 ---
 
 This website ("the Site") respects the privacy of its visitors and is committed to protecting personal information. This Privacy Policy explains how personal information is handled on the Site.  

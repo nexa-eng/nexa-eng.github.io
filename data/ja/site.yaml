@@ -4,7 +4,7 @@ copyright: |
   © 2025 Nexa Engineering株式会社 (Content)
 
 # Footer Disclaimer
-disclaimer: "This site uses the hugo-toha theme under the MIT license. See LICENSE for details."
+disclaimer: This site uses the hugo-toha theme under the MIT license. See LICENSE for details.
 
 # Meta Description for SEO
 description: 中小企業のDXに伴走するパートナー。一人一人の課題に向き合いながらも「手の届くIT」を提供します。現場で培った確かな技術力で、御社の課題解決を伴奏支援します。
@@ -12,6 +12,12 @@ description: 中小企業のDXに伴走するパートナー。一人一人の�
 # Custom Menus for Navigation
 customMenus:
   # Posts menu (hidden from navbar, shown in footer)
+
+  - name: 会社情報
+    url: /company/
+    hideFromNavbar: false
+    showOnFooter: true
+
   - name: Posts
     url: /posts/
     hideFromNavbar: true
@@ -20,7 +26,7 @@ customMenus:
   # Privacy Policy menu
   - name: Privacy Policy
     url: /privacy-policy/
-    hideFromNavbar: falses
+    hideFromNavbar: false
     showOnFooter: true
 
   # Contact menu
