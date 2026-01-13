@@ -60,7 +60,7 @@ h2 {
 /* h3スタイル */
 h3 {
     font-size: var(--heading-font-size-small);
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 2.5rem 0.5rem 2.5rem; /* 左側の余白を1.5rem→2.5remに拡大 */
     background: transparent;
     border-left: solid 10px var(--primary-color);
 }
