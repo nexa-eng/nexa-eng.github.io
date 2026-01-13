@@ -10,9 +10,9 @@ section:
 # your designation
 designation: 中小企業のDXに伴走するパートナー
 # your company information
-company:
-  name: Nexa Engineering
-  url: "https://nexa-eng.com/"
+#company:
+#  name: Nexa Engineering
+#  url: "https://nexa-eng.com/"
 
 # your resume. this file path should be relative to you "static" directory
 # Dreprecated. Use resourceLinks instead.
