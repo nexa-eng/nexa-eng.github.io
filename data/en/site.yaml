@@ -15,12 +15,12 @@ customMenus:
   - name: Posts
     url: /posts/
     hideFromNavbar: true
-    showOnFooter: true
+    showOnFooter: false
 
   # Privacy Policy menu
   - name: Privacy Policy
     url: /privacy-policy/
-    hideFromNavbar: false
+    hideFromNavbar: falses
     showOnFooter: true
 
   # Contact menu
