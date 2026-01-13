@@ -13,15 +13,15 @@ description: 中小企業のDXに伴走するパートナー。一人一人の�
 customMenus:
   # Posts menu (hidden from navbar, shown in footer)
 
-  - name: 会社情報
+  - name: 企業情報
     url: /company/
     hideFromNavbar: false
     showOnFooter: true
 
-  - name: Posts
-    url: /posts/
-    hideFromNavbar: true
-    showOnFooter: false
+#  - name: Posts
+#    url: /posts/
+#    hideFromNavbar: true
+#    showOnFooter: false
 
   # Privacy Policy menu
   - name: Privacy Policy

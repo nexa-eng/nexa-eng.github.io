@@ -1,5 +1,8 @@
 ---
 title: 企業情報
+date: 2025-09-12
+authors:
+  - admin
 ---
 
 ## 会社概要
