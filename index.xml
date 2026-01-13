@@ -1,544 +1,544 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nexa Engineering</title><link>https://nexa-eng.com/</link><description>Recent content on Nexa Engineering</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 04 May 2025 18:10:00 +0900</lastBuildDate><atom:link href="https://nexa-eng.com/index.xml" rel="self" type="application/rss+xml"/><item><title>HugoをMacにインストールする手順</title><link>https://nexa-eng.com/posts/hugo/01-basic/03-install-mac/</link><pubDate>Sun, 04 May 2025 18:10:00 +0900</pubDate><guid>https://nexa-eng.com/posts/hugo/01-basic/03-install-mac/</guid><description>&lt;p>こんにちは。&lt;a href="https://nexa-eng.com/#about">フリーランスエンジニアの市原&lt;i class="fas fa-link">&lt;/i>&lt;/a>です。&lt;/p>
-&lt;p>HugoとGoとNode.jsをMacにインストールする手順を記載します。&lt;br>
-本題前にコマンドを書いておきます。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>brew install hugo go node
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>以上です。&lt;/p>
-&lt;p>ちなみにこのサイトは Hugo + toha + GitHub Pages + XSever Domainにより&lt;strong>初年度1円&lt;/strong>で公開されています。&lt;/p>
-&lt;h2 id="やってみたこと">やってみたこと&lt;/h2>
-&lt;ul>
-&lt;li>Homebrewを使ったソフトウェアのインストール(まだなら)&lt;/li>
-&lt;li>ターミナルでHugoをインストールするコマンド&lt;/li>
-&lt;li>Hugoのインストール確認方法&lt;/li>
-&lt;/ul>
-&lt;h2 id="手順">手順&lt;/h2>
-&lt;p>&lt;a href="https://gohugo.io/installation/macos/" target="_blank" rel="noopener">Hugo公式インストールガイド &lt;i class="fa-solid fa-arrow-up-right-from-square">&lt;/i>&lt;/a>&lt;/p>
-&lt;h3 id="1-homebrewをインストール">1. Homebrewをインストール&lt;/h3>
-&lt;p>すでにインストール済みの場合はこのステップをスキップしてOKです。&lt;br>
-MacにHomebrewが入っていない場合は、Macで絶対に外せないパッケージ管理&lt;a href="https://brew.sh/" target="_blank" rel="noopener">Homebrewの公式サイト&lt;i class="fa-solid fa-arrow-up-right-from-square">&lt;/i>&lt;/a>にアクセスします。&lt;br>
-表示されているインストールコマンドをコピーして、ターミナルに貼り付けて実行します。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>/bin/bash -c &lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#66d9ef">$(&lt;/span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh&lt;span style="color:#66d9ef">)&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>これでHomebrewがインストールされます。&lt;/p>
-&lt;h3 id="2-hugoをインストール">2. Hugoをインストール&lt;/h3>
-&lt;p>Homebrewが使えるようになったら、以下のコマンドをターミナルで実行してHugoをインストールします。&lt;br>
-ついでなのでテーマをローカルで確認するのにGoとNode.jsが必要になるのでついでに入れておきましょう。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>brew install hugo go node
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>以上！&lt;/p>
-&lt;p>なお拡張版というのがあり、テーマによってはこちらが必要になるケースがあるようです。
-試しに入れてみましたが、どちらにせよコマンド一発です。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>CGO_ENABLED&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span> go install -tags extended github.com/gohugoio/hugo@latest
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="3-インストールを確認">3. インストールを確認&lt;/h3>
-&lt;p>Hugoがちゃんとインストールされたか確認するには、以下のコマンドを実行します。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>hugo version
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>このコマンドを実行してHugoのバージョン情報が表示されればOKです。&lt;br>
-ちなみに、&lt;code>which hugo&lt;/code>コマンドを使うとHugoのインストール場所も確認できます。&lt;/p>
-&lt;p>GoとNode.jsの確認もしておきましょう。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>go version
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Goのバージョン情報が表示されればインストール成功。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span> node -v
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> npm -v
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>&lt;code>node -v&lt;/code>でNode.jsのバージョンが表示されれば成功。&lt;/li>
-&lt;li>&lt;code>npm -v&lt;/code>でnpm（Node.jsのパッケージマネージャー）のバージョンが表示されれば成功。&lt;/li>
-&lt;/ul>
-&lt;h2 id="まとめ">まとめ&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>Homebrewは便利&lt;/strong>: Macでソフトウェアをインストールするならこれ一択。&lt;/li>
-&lt;li>&lt;strong>インストールコマンド&lt;/strong>: &lt;code>brew install hugo go node&lt;/code>&lt;/li>
-&lt;li>&lt;strong>Hugoの確認コマンド&lt;/strong>： &lt;code>hugo version&lt;/code>&lt;/li>
-&lt;li>&lt;strong>Goの確認コマンド&lt;/strong>: &lt;code>go version&lt;/code>&lt;/li>
-&lt;li>&lt;strong>Node.jsの確認コマンド&lt;/strong>: &lt;code>node -v&lt;/code>&lt;/li>
-&lt;li>&lt;strong>npmの確認コマンド&lt;/strong>: &lt;code>npm -v&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;p>これでMacにHugoをインストールできました。&lt;br>
-次はHugoを使って実際に静的サイトを作ってみましょう。Hugoの高速さと使いやすさをぜひ体験してみてください！&lt;/p></description></item><item><title>HugoをWindowsにインストールする手順</title><link>https://nexa-eng.com/posts/hugo/01-basic/02-install-win/</link><pubDate>Sun, 04 May 2025 17:00:33 +0900</pubDate><guid>https://nexa-eng.com/posts/hugo/01-basic/02-install-win/</guid><description>&lt;p>こんにちは。&lt;a href="https://nexa-eng.com/#about">フリーランスエンジニアの市原&lt;i class="fas fa-link">&lt;/i>&lt;/a>です。&lt;/p>
-&lt;p>HugoをWindowsにインストールするのはめちゃくちゃ簡単でしたが、公式はあっさりしているし、いくつか手段があって結局どれやねん！てなるかもしれません。&lt;br>
-ここでは、実際にやってみた手順をざっくりまとめてみます。初心者でも迷わず進められるはずなので、ぜひ試してみてください。&lt;br>
-これからHugoを使ってみたい人の参考になれば幸いです。&lt;/p>
-&lt;p>ちなみにこのサイトは Hugo + toha + GitHub Pages + XSever Domainにより&lt;strong>初年度1円&lt;/strong>で公開されています。&lt;/p>
-&lt;h2 id="やってみたこと">やってみたこと&lt;/h2>
-&lt;ul>
-&lt;li>Windowsにビルド済みバイナリのHugoを配置&lt;/li>
-&lt;li>PATH環境変数を設定して、どこからでもHugoを使えるようにする&lt;/li>
-&lt;li>のちのち必要になるGoとNode.jsも入れる&lt;/li>
-&lt;/ul>
-&lt;h2 id="hugoインストール手順">Hugoインストール手順&lt;/h2>
-&lt;p>&lt;a href="https://gohugo.io/installation/windows/" target="_blank" rel="noopener">Hugo公式インストールガイド &lt;i class="fa-solid fa-arrow-up-right-from-square">&lt;/i>&lt;/a>&lt;/p>
-&lt;p>インストーラではなく、ビルド済みのexeを置いてパスを通すスタイルです。&lt;br>
-公式手順より詳細に記載しておきます。&lt;/p>
-&lt;h3 id="1-フォルダを作る">1. フォルダを作る&lt;/h3>
-&lt;p>まず、Cドライブに「Hugo」というフォルダを作成。&lt;br>
-その中に「bin」というフォルダも作成。&lt;br>
-この「bin」フォルダにHugoの実行ファイルを入れ流予定です。&lt;/p>
-&lt;p>&lt;code>C:\Hugo\bin\&lt;/code>&lt;/p>
-&lt;h3 id="2-hugoをダウンロード">2. Hugoをダウンロード&lt;/h3>
-&lt;p>次に、&lt;a href="https://github.com/gohugoio/hugo/releases" target="_blank" rel="noopener">HugoのGitHubリリースページ&lt;/a>にアクセス。&lt;br>
-自分のWindowsに合ったバージョンをダウンロードします。&lt;br>
-だいたいwindows-amd64です。&lt;br>
-私みたいにMシリーズのMacの仮想環境でWindowsを使ったりするとarmだったりします。&lt;/p>
-&lt;h3 id="3-ファイルを解凍して配置">3. ファイルを解凍して配置&lt;/h3>
-&lt;p>ダウンロードしたZIPファイルを解凍。&lt;br>
-「hugo.exe」を「bin」に移動します。&lt;/p>
-&lt;h3 id="4-コマンドラインでhugoを動かしてみる">4. コマンドラインでHugoを動かしてみる&lt;/h3>
-&lt;p>コマンドプロンプトを開いて、作成した「Hugo/bin」フォルダに移動して以下を実行。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>cd C:&lt;span style="color:#ae81ff">\H&lt;/span>ugo&lt;span style="color:#ae81ff">\b&lt;/span>in
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>hugo version
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>これでHugoのバージョン情報が表示されれば、一旦動作確認はOKです。&lt;/p>
-&lt;h3 id="5-path環境変数を設定">5. PATH環境変数を設定&lt;/h3>
-&lt;p>どのフォルダからでもHugoを使えるようにするために、PATH環境変数を設定します。&lt;/p>
-&lt;ol>
-&lt;li>「システム環境変数の編集」を開く（Windowsの検索バーで「環境変数」と入力すると出る）。&lt;/li>
-&lt;li>「システム環境変数」の「Path」を選択して編集をクリック。&lt;/li>
-&lt;li>「新規」をクリックして、「C:\Hugo\bin」を追加。&lt;/li>
-&lt;li>「保存」して完了。&lt;/li>
-&lt;/ol>
-&lt;h3 id="6-設定を確認">6. 設定を確認&lt;/h3>
-&lt;p>コマンドプロンプトを再起動して、フォルダ移動せずに以下を実行。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>hugo version
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>どのフォルダからでもHugoのバージョン情報が表示されれば、設定完了👌&lt;/p>
-&lt;p>以下のように、現在のブログ構成にGoとNode.jsのインストール手順を追加しました。Hugoの手順と同じトーンで記載しています。&lt;/p>
-&lt;h2 id="goとnodejsのインストール手順">GoとNode.jsのインストール手順&lt;/h2>
-&lt;p>Hugoを使う際に、テーマのローカル確認やビルドでGoとNode.jsが必要になる場合があります。&lt;br>
-ついでなので、WindowsにGoとNode.jsをインストールしてしまいましょう。どちらもインストーラでポチポチで終わりです。&lt;/p>
-&lt;h3 id="1-goをインストール">1. Goをインストール&lt;/h3>
-&lt;p>まず、Goをインストールします。&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>&lt;strong>Go公式サイトにアクセス&lt;/strong>&lt;br>
-&lt;a href="https://go.dev/dl/" target="_blank" rel="noopener">Go公式ダウンロードページ &lt;i class="fa-solid fa-arrow-up-right-from-square">&lt;/i>&lt;/a>にアクセスします。&lt;/p></description></item><item><title>Hugo入門：静的サイトジェネレータの魅力</title><link>https://nexa-eng.com/posts/hugo/01-basic/01-intro/</link><pubDate>Sun, 04 May 2025 12:50:33 +0900</pubDate><guid>https://nexa-eng.com/posts/hugo/01-basic/01-intro/</guid><description>&lt;p>こんにちは。&lt;a href="https://nexa-eng.com/#about">フリーランスエンジニアの市原&lt;i class="fas fa-link">&lt;/i>&lt;/a>です。&lt;/p>
-&lt;p>このページでは、Hugoという静的サイトジェネレーター（SSG）について初心者目線で情報を整理しています。&lt;br>
-これからHugoを使ってみたい人の参考になれば幸いです。&lt;/p>
-&lt;p>ちなみにこのサイトは Hugo + toha + GitHub Pages + XSever Domainにより&lt;strong>初年度1円&lt;/strong>で公開されています。&lt;/p>
-&lt;h2 id="静的サイトと動的サイトの違い">静的サイトと動的サイトの違い&lt;/h2>
-&lt;p>まず、静的サイトと動的サイトの違いを簡単に説明します。&lt;/p>
-&lt;h3 id="静的サイトとは">静的サイトとは？&lt;/h3>
-&lt;p>静的サイトは、HTMLファイルをそのままサーバーに置いて配信するシンプルな仕組みです。&lt;br>
-例えば、個人ブログやポートフォリオサイトなんかに向いています。&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>メリット&lt;/strong>: 高速、セキュア、ホスティングが安い&lt;/li>
-&lt;li>&lt;strong>デメリット&lt;/strong>: 動的な機能（ログインやコメント機能など）が難しい&lt;/li>
-&lt;/ul>
-&lt;h3 id="動的サイトとは">動的サイトとは？&lt;/h3>
-&lt;p>一方、動的サイトは、ユーザーごとに異なるコンテンツを生成する仕組みです。&lt;br>
-例えば、FacebookやAmazonのようなサイトがこれに当たります。&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>メリット&lt;/strong>: 柔軟でカスタマイズ性が高い&lt;/li>
-&lt;li>&lt;strong>デメリット&lt;/strong>: サーバーリソースが必要で、管理が複雑&lt;/li>
-&lt;/ul>
-&lt;p>ログインで人によってコンテンツを変えたいとかなら別ですが、普通の個人ブログなら静的サイトで十分だと思います。
-Hugoだと問い合わせフォームからメールを送るのが難しかったりしますが、これはGoogle Formsを埋め込んだりで代用できます。&lt;/p>
-&lt;h2 id="hugoの特徴">Hugoの特徴&lt;/h2>
-&lt;p>Hugoは静的サイトジェネレーターの中でも人気のあるツールの一つです。&lt;br>
-以下の点が魅力的だと感じました。&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>超高速&lt;/strong>: Go言語で作られていて、ビルドがめちゃくちゃ速く自称世界最速。お作法に従ったファイル配置にすれば構造を勝手に解析してページやタグやリンクを作ってくれて超ラク。&lt;/li>
-&lt;li>&lt;strong>Markdown対応&lt;/strong>: 記事はマークダウンで書けるので、普段資料等をマークダウンで作っている私にピッタリ。ローカルHugoサーバを立ち上げれば、書きながらホットリロードで即確認できます。&lt;/li>
-&lt;li>&lt;strong>無料でオープンソース&lt;/strong>: 豊富なテーマが揃っていて、カスタマイズもお作法さえわかれば結構簡単。&lt;/li>
-&lt;li>&lt;strong>柔軟性&lt;/strong>: テンプレートやレイアウトの自由度が高い。&lt;/li>
-&lt;/ul>
-&lt;h2 id="他のcmsとの比較">他のCMSとの比較&lt;/h2>
-&lt;p>WordPressなどと比較して、Hugoには以下のようなメリットがあります。&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>パフォーマンス&lt;/strong>: 静的サイトなので、ページの読み込みが速い。&lt;/li>
-&lt;li>&lt;strong>セキュリティ&lt;/strong>: データベースを使わないので、ハッキングリスクが低い。&lt;/li>
-&lt;li>&lt;strong>コスト&lt;/strong>: 無料で使える。GitHub Pagesとの組み合わせで0円運用可能。GitHub Pagesはカスタムドメインも対応可能。XServer Domainなら初年度1円でGoogleアドセンス可能。&lt;/li>
-&lt;/ul>
-&lt;h2 id="他の選択肢まとめ">他の選択肢まとめ&lt;/h2>
-&lt;p>その他の静的サイトジェネレータの選択肢を(GPTさんが)整理しました。&lt;br>
-ざっくり上から人気順です。そもそもマークダウンで書いたろ！って人が少ないんでしょうね。。。&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th style="text-align: left">名前&lt;/th>
-&lt;th style="text-align: left">特徴&lt;/th>
-&lt;th style="text-align: left">公式サイト&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td style="text-align: left">&lt;strong>Next.js&lt;/strong>&lt;/td>
-&lt;td style="text-align: left">Reactベースのフレームワークで、静的サイトと動的サイトの両方を構築可能。SSRやSSGをサポートし、高度な機能が豊富。&lt;br>&lt;strong>評価&lt;/strong>: Reactエコシステムの中心的存在で、最新技術を活用可能。&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://nextjs.org/" target="_blank" rel="noopener">https://nextjs.org/&lt;/a>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align: left">&lt;strong>Gatsby&lt;/strong>&lt;/td>
-&lt;td style="text-align: left">Reactベースの静的サイトジェネレータで、GraphQLを使用して柔軟なデータ管理が可能。プラグインエコシステムが充実し、SEOに強い。&lt;br>&lt;strong>評価&lt;/strong>: Reactユーザーに支持され、SEOやパフォーマンスに特化。&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://www.gatsbyjs.com/" target="_blank" rel="noopener">https://www.gatsbyjs.com/&lt;/a>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align: left">&lt;strong>Hugo&lt;/strong>&lt;/td>
-&lt;td style="text-align: left">Go言語で構築された静的サイトジェネレータで、超高速なビルド速度を誇る。Markdown対応で簡単にコンテンツ作成が可能。&lt;br>&lt;strong>評価&lt;/strong>: 高速性と柔軟性が評価され、初心者から上級者まで幅広く支持されている。&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://gohugo.io/" target="_blank" rel="noopener">https://gohugo.io/&lt;/a>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align: left">&lt;strong>Jekyll&lt;/strong>&lt;/td>
-&lt;td style="text-align: left">Rubyで構築された静的サイトジェネレータ。GitHub Pagesと統合され無料ホスティング可能。プラグインやテーマが豊富でカスタマイズ性が高い。&lt;br>&lt;strong>評価&lt;/strong>: 長年の実績とGitHub Pagesとの親和性が高い。&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://jekyllrb.com/" target="_blank" rel="noopener">https://jekyllrb.com/&lt;/a>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align: left">&lt;strong>Nuxt.js&lt;/strong>&lt;/td>
-&lt;td style="text-align: left">Vue.jsベースのフレームワークで、SSGとSSRをサポート。プラグインやモジュールが豊富で柔軟な開発が可能。&lt;br>&lt;strong>評価&lt;/strong>: Vue.jsユーザーにとって最適な選択肢として支持されている。&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://nuxtjs.org/" target="_blank" rel="noopener">https://nuxtjs.org/&lt;/a>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align: left">&lt;strong>Eleventy&lt;/strong>&lt;/td>
-&lt;td style="text-align: left">JavaScriptで構築された軽量な静的サイトジェネレータで、シンプルで柔軟性が高く、高速。初心者にも扱いやすい。&lt;br>&lt;strong>評価&lt;/strong>: 軽量でシンプルな構成が好まれ、JavaScriptユーザーに人気。&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://www.11ty.dev/" target="_blank" rel="noopener">https://www.11ty.dev/&lt;/a>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align: left">&lt;strong>Hexo&lt;/strong>&lt;/td>
-&lt;td style="text-align: left">Node.jsベースの静的サイトジェネレータで、高速でMarkdownを使用して簡単にコンテンツ作成可能。ブログ向けに最適化。&lt;br>&lt;strong>評価&lt;/strong>: ブログ用途に特化し、Node.jsユーザーに支持されている。&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://hexo.io/" target="_blank" rel="noopener">https://hexo.io/&lt;/a>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align: left">&lt;strong>Docusaurus&lt;/strong>&lt;/td>
-&lt;td style="text-align: left">Facebookが開発した静的サイトジェネレータで、ドキュメントサイトやブログの作成に特化。Reactベースでカスタマイズ性が高い。&lt;br>&lt;strong>評価&lt;/strong>: Facebook製で信頼性が高く、Reactユーザーに支持されている。&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://docusaurus.io/" target="_blank" rel="noopener">https://docusaurus.io/&lt;/a>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align: left">&lt;strong>MkDocs&lt;/strong>&lt;/td>
-&lt;td style="text-align: left">Pythonで構築され、ドキュメントサイトの作成に特化。Markdownを使用して簡単にドキュメント作成可能。&lt;br>&lt;strong>評価&lt;/strong>: 技術ドキュメント作成に特化し、Pythonユーザーに支持されている。&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://www.mkdocs.org/" target="_blank" rel="noopener">https://www.mkdocs.org/&lt;/a>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align: left">&lt;strong>Zola&lt;/strong>&lt;/td>
-&lt;td style="text-align: left">Rustで構築された静的サイトジェネレータで、シンプルで高速、設定が簡単。デフォルトで多言語対応をサポート。&lt;br>&lt;strong>評価&lt;/strong>: Rustユーザーに注目され、高速性が評価されている。&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://www.getzola.org/" target="_blank" rel="noopener">https://www.getzola.org/&lt;/a>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align: left">&lt;strong>Pelican&lt;/strong>&lt;/td>
-&lt;td style="text-align: left">Pythonで構築された静的サイトジェネレータで、MarkdownやreStructuredTextをサポート。シンプルでPythonユーザーに最適。&lt;br>&lt;strong>評価&lt;/strong>: Pythonユーザーに特化したツールとして利用されている。&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://getpelican.com" target="_blank" rel="noopener">https://getpelican.com&lt;/a>&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;p>マークダウン対応、テンプレートがあってカスタム可能、運用コストが低い、それなりの人気とコミュニティ継続、&lt;br>
-これらを満たすのがHugoでした。テーマ選びをミスらなければ、数分でテストページ公開できるし、ブログにも超使いやすいです。（紹介の多いテーマの後継HugoBlox/theme-academic-cvは構造がややこしすぎるし更新止まっているのでやめとけ）&lt;/p></description></item><item><title>Contact</title><link>https://nexa-eng.com/contact/</link><pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate><guid>https://nexa-eng.com/contact/</guid><description>&lt;p>Please fill out the form below.&lt;/p>
-&lt;div style="display: flex; justify-content: center; align-items: center;">
-&lt;iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfZzl6MoBPzs1lMJXCGu1kTf_KI0Myn5JeyZ7CS3q206R9YZw/viewform?embedded=true" width="640" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading…&lt;/iframe>
-&lt;/div></description></item><item><title>Privacy Policy</title><link>https://nexa-eng.com/privacy-policy/</link><pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate><guid>https://nexa-eng.com/privacy-policy/</guid><description>&lt;p>This website (&amp;ldquo;the Site&amp;rdquo;) respects the privacy of its visitors and is committed to protecting personal information. This Privacy Policy explains how personal information is handled on the Site.&lt;/p>
-&lt;h2 id="1-collection-of-personal-information">1. Collection of Personal Information&lt;/h2>
-&lt;p>The Site may collect visitor information in the following ways:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Google AdSense&lt;/strong>&lt;br>
-The Site uses Google AdSense to display advertisements. Third-party vendors, including Google, use cookies to serve ads based on a visitor&amp;rsquo;s past visits to the Site.&lt;br>
-For more details, please refer to &lt;a href="https://policies.google.com/technologies/ads?hl=en" target="_blank" rel="noopener">Google&amp;rsquo;s Advertising Policy&lt;/a>.&lt;/p></description></item><item><title>Introduction</title><link>https://nexa-eng.com/posts/category/introduction/</link><pubDate>Mon, 08 Jun 2020 08:06:25 +0600</pubDate><guid>https://nexa-eng.com/posts/category/introduction/</guid><description>&lt;p>Greeting! This is an introduction post. This post tests the followings:&lt;/p>
-&lt;ul>
-&lt;li>Hero image is in the same directory as the post.&lt;/li>
-&lt;li>This post should be at top of the sidebar.&lt;/li>
-&lt;li>Post author should be the same as specified in &lt;code>author.yaml&lt;/code> file.&lt;/li>
-&lt;/ul></description></item><item><title>Markdown Samples</title><link>https://nexa-eng.com/posts/category/markdown-sample/</link><pubDate>Mon, 08 Jun 2020 08:06:25 +0600</pubDate><guid>https://nexa-eng.com/posts/category/markdown-sample/</guid><description>&lt;p>This is a sample post intended to test the followings:&lt;/p>
-&lt;ul>
-&lt;li>A different post author.&lt;/li>
-&lt;li>Table of contents.&lt;/li>
-&lt;li>Markdown content rendering.&lt;/li>
-&lt;li>Math rendering.&lt;/li>
-&lt;li>Emoji rendering.&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h1 id="markdown-syntax-rendering">Markdown Syntax Rendering&lt;/h1>
-&lt;h2 id="headings">Headings&lt;/h2>
-&lt;p>The following HTML &lt;code>&amp;lt;h1&amp;gt;&lt;/code>—&lt;code>&amp;lt;h6&amp;gt;&lt;/code> elements represent six levels of section headings. &lt;code>&amp;lt;h1&amp;gt;&lt;/code> is the highest section level while &lt;code>&amp;lt;h6&amp;gt;&lt;/code> is the lowest.&lt;/p>
-&lt;h1 id="h1">H1&lt;/h1>
-&lt;h2 id="h2">H2&lt;/h2>
-&lt;h3 id="h3">H3&lt;/h3>
-&lt;h4 id="h4">H4&lt;/h4>
-&lt;h5 id="h5">H5&lt;/h5>
-&lt;h6 id="h6">H6&lt;/h6>
-&lt;h2 id="paragraph">Paragraph&lt;/h2>
-&lt;p>Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.&lt;/p></description></item><item><title>Rich Content</title><link>https://nexa-eng.com/posts/category/sub-category/rich-content/</link><pubDate>Mon, 08 Jun 2020 08:06:25 +0600</pubDate><guid>https://nexa-eng.com/posts/category/sub-category/rich-content/</guid><description>&lt;p>This sample post tests the followings:&lt;/p>
-&lt;ul>
-&lt;li>Category, sub-category nesting in the sidebar.&lt;/li>
-&lt;li>Hero image and other images are in &lt;code>images&lt;/code> folder inside this post directory.&lt;/li>
-&lt;li>Different media rendering like image, tweet, YouTube video, Vimeo video etc.&lt;/li>
-&lt;/ul>
-&lt;h3 id="image-sample">Image Sample&lt;/h3>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nexa Engineering Co., Ltd.</title><link>https://nexa-eng.com/</link><description>Recent content on Nexa Engineering Co., Ltd.</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 04 May 2025 18:10:00 +0900</lastBuildDate><atom:link href="https://nexa-eng.com/index.xml" rel="self" type="application/rss+xml"/><item><title>HugoをMacにインストールする手順</title><link>https://nexa-eng.com/posts/hugo/01-basic/03-install-mac/</link><pubDate>Sun, 04 May 2025 18:10:00 +0900</pubDate><guid>https://nexa-eng.com/posts/hugo/01-basic/03-install-mac/</guid><description>&lt;p&gt;こんにちは。&lt;a href="https://nexa-eng.com/#about"&gt;フリーランスエンジニアの市原&lt;i class="fas fa-link"&gt;&lt;/i&gt;&lt;/a&gt;です。&lt;/p&gt;
+&lt;p&gt;HugoとGoとNode.jsをMacにインストールする手順を記載します。&lt;br&gt;
+本題前にコマンドを書いておきます。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;brew install hugo go node
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;以上です。&lt;/p&gt;
+&lt;p&gt;ちなみにこのサイトは Hugo + toha + GitHub Pages + XSever Domainにより&lt;strong&gt;初年度1円&lt;/strong&gt;で公開されています。&lt;/p&gt;
+&lt;h2 id="やってみたこと"&gt;やってみたこと&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Homebrewを使ったソフトウェアのインストール(まだなら)&lt;/li&gt;
+&lt;li&gt;ターミナルでHugoをインストールするコマンド&lt;/li&gt;
+&lt;li&gt;Hugoのインストール確認方法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="手順"&gt;手順&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://gohugo.io/installation/macos/" target="_blank" rel="noopener"&gt;Hugo公式インストールガイド &lt;i class="fa-solid fa-arrow-up-right-from-square"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="1-homebrewをインストール"&gt;1. Homebrewをインストール&lt;/h3&gt;
+&lt;p&gt;すでにインストール済みの場合はこのステップをスキップしてOKです。&lt;br&gt;
+MacにHomebrewが入っていない場合は、Macで絶対に外せないパッケージ管理&lt;a href="https://brew.sh/" target="_blank" rel="noopener"&gt;Homebrewの公式サイト&lt;i class="fa-solid fa-arrow-up-right-from-square"&gt;&lt;/i&gt;&lt;/a&gt;にアクセスします。&lt;br&gt;
+表示されているインストールコマンドをコピーして、ターミナルに貼り付けて実行します。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;/bin/bash -c &lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;$(&lt;/span&gt;curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh&lt;span style="color:#66d9ef"&gt;)&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;これでHomebrewがインストールされます。&lt;/p&gt;
+&lt;h3 id="2-hugoをインストール"&gt;2. Hugoをインストール&lt;/h3&gt;
+&lt;p&gt;Homebrewが使えるようになったら、以下のコマンドをターミナルで実行してHugoをインストールします。&lt;br&gt;
+ついでなのでテーマをローカルで確認するのにGoとNode.jsが必要になるのでついでに入れておきましょう。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;brew install hugo go node
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;以上！&lt;/p&gt;
+&lt;p&gt;なお拡張版というのがあり、テーマによってはこちらが必要になるケースがあるようです。
+試しに入れてみましたが、どちらにせよコマンド一発です。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;CGO_ENABLED&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; go install -tags extended github.com/gohugoio/hugo@latest
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="3-インストールを確認"&gt;3. インストールを確認&lt;/h3&gt;
+&lt;p&gt;Hugoがちゃんとインストールされたか確認するには、以下のコマンドを実行します。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;hugo version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;このコマンドを実行してHugoのバージョン情報が表示されればOKです。&lt;br&gt;
+ちなみに、&lt;code&gt;which hugo&lt;/code&gt;コマンドを使うとHugoのインストール場所も確認できます。&lt;/p&gt;
+&lt;p&gt;GoとNode.jsの確認もしておきましょう。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;go version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Goのバージョン情報が表示されればインストール成功。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; node -v
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; npm -v
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;node -v&lt;/code&gt;でNode.jsのバージョンが表示されれば成功。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;npm -v&lt;/code&gt;でnpm（Node.jsのパッケージマネージャー）のバージョンが表示されれば成功。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="まとめ"&gt;まとめ&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Homebrewは便利&lt;/strong&gt;: Macでソフトウェアをインストールするならこれ一択。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;インストールコマンド&lt;/strong&gt;: &lt;code&gt;brew install hugo go node&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hugoの確認コマンド&lt;/strong&gt;： &lt;code&gt;hugo version&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Goの確認コマンド&lt;/strong&gt;: &lt;code&gt;go version&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Node.jsの確認コマンド&lt;/strong&gt;: &lt;code&gt;node -v&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;npmの確認コマンド&lt;/strong&gt;: &lt;code&gt;npm -v&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;これでMacにHugoをインストールできました。&lt;br&gt;
+次はHugoを使って実際に静的サイトを作ってみましょう。Hugoの高速さと使いやすさをぜひ体験してみてください！&lt;/p&gt;</description></item><item><title>HugoをWindowsにインストールする手順</title><link>https://nexa-eng.com/posts/hugo/01-basic/02-install-win/</link><pubDate>Sun, 04 May 2025 17:00:33 +0900</pubDate><guid>https://nexa-eng.com/posts/hugo/01-basic/02-install-win/</guid><description>&lt;p&gt;こんにちは。&lt;a href="https://nexa-eng.com/#about"&gt;フリーランスエンジニアの市原&lt;i class="fas fa-link"&gt;&lt;/i&gt;&lt;/a&gt;です。&lt;/p&gt;
+&lt;p&gt;HugoをWindowsにインストールするのはめちゃくちゃ簡単でしたが、公式はあっさりしているし、いくつか手段があって結局どれやねん！てなるかもしれません。&lt;br&gt;
+ここでは、実際にやってみた手順をざっくりまとめてみます。初心者でも迷わず進められるはずなので、ぜひ試してみてください。&lt;br&gt;
+これからHugoを使ってみたい人の参考になれば幸いです。&lt;/p&gt;
+&lt;p&gt;ちなみにこのサイトは Hugo + toha + GitHub Pages + XSever Domainにより&lt;strong&gt;初年度1円&lt;/strong&gt;で公開されています。&lt;/p&gt;
+&lt;h2 id="やってみたこと"&gt;やってみたこと&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Windowsにビルド済みバイナリのHugoを配置&lt;/li&gt;
+&lt;li&gt;PATH環境変数を設定して、どこからでもHugoを使えるようにする&lt;/li&gt;
+&lt;li&gt;のちのち必要になるGoとNode.jsも入れる&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="hugoインストール手順"&gt;Hugoインストール手順&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://gohugo.io/installation/windows/" target="_blank" rel="noopener"&gt;Hugo公式インストールガイド &lt;i class="fa-solid fa-arrow-up-right-from-square"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;インストーラではなく、ビルド済みのexeを置いてパスを通すスタイルです。&lt;br&gt;
+公式手順より詳細に記載しておきます。&lt;/p&gt;
+&lt;h3 id="1-フォルダを作る"&gt;1. フォルダを作る&lt;/h3&gt;
+&lt;p&gt;まず、Cドライブに「Hugo」というフォルダを作成。&lt;br&gt;
+その中に「bin」というフォルダも作成。&lt;br&gt;
+この「bin」フォルダにHugoの実行ファイルを入れ流予定です。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;C:\Hugo\bin\&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id="2-hugoをダウンロード"&gt;2. Hugoをダウンロード&lt;/h3&gt;
+&lt;p&gt;次に、&lt;a href="https://github.com/gohugoio/hugo/releases" target="_blank" rel="noopener"&gt;HugoのGitHubリリースページ&lt;/a&gt;にアクセス。&lt;br&gt;
+自分のWindowsに合ったバージョンをダウンロードします。&lt;br&gt;
+だいたいwindows-amd64です。&lt;br&gt;
+私みたいにMシリーズのMacの仮想環境でWindowsを使ったりするとarmだったりします。&lt;/p&gt;
+&lt;h3 id="3-ファイルを解凍して配置"&gt;3. ファイルを解凍して配置&lt;/h3&gt;
+&lt;p&gt;ダウンロードしたZIPファイルを解凍。&lt;br&gt;
+「hugo.exe」を「bin」に移動します。&lt;/p&gt;
+&lt;h3 id="4-コマンドラインでhugoを動かしてみる"&gt;4. コマンドラインでHugoを動かしてみる&lt;/h3&gt;
+&lt;p&gt;コマンドプロンプトを開いて、作成した「Hugo/bin」フォルダに移動して以下を実行。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd C:&lt;span style="color:#ae81ff"&gt;\H&lt;/span&gt;ugo&lt;span style="color:#ae81ff"&gt;\b&lt;/span&gt;in
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;hugo version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;これでHugoのバージョン情報が表示されれば、一旦動作確認はOKです。&lt;/p&gt;
+&lt;h3 id="5-path環境変数を設定"&gt;5. PATH環境変数を設定&lt;/h3&gt;
+&lt;p&gt;どのフォルダからでもHugoを使えるようにするために、PATH環境変数を設定します。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;「システム環境変数の編集」を開く（Windowsの検索バーで「環境変数」と入力すると出る）。&lt;/li&gt;
+&lt;li&gt;「システム環境変数」の「Path」を選択して編集をクリック。&lt;/li&gt;
+&lt;li&gt;「新規」をクリックして、「C:\Hugo\bin」を追加。&lt;/li&gt;
+&lt;li&gt;「保存」して完了。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="6-設定を確認"&gt;6. 設定を確認&lt;/h3&gt;
+&lt;p&gt;コマンドプロンプトを再起動して、フォルダ移動せずに以下を実行。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;hugo version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;どのフォルダからでもHugoのバージョン情報が表示されれば、設定完了👌&lt;/p&gt;
+&lt;p&gt;以下のように、現在のブログ構成にGoとNode.jsのインストール手順を追加しました。Hugoの手順と同じトーンで記載しています。&lt;/p&gt;
+&lt;h2 id="goとnodejsのインストール手順"&gt;GoとNode.jsのインストール手順&lt;/h2&gt;
+&lt;p&gt;Hugoを使う際に、テーマのローカル確認やビルドでGoとNode.jsが必要になる場合があります。&lt;br&gt;
+ついでなので、WindowsにGoとNode.jsをインストールしてしまいましょう。どちらもインストーラでポチポチで終わりです。&lt;/p&gt;
+&lt;h3 id="1-goをインストール"&gt;1. Goをインストール&lt;/h3&gt;
+&lt;p&gt;まず、Goをインストールします。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Go公式サイトにアクセス&lt;/strong&gt;&lt;br&gt;
+&lt;a href="https://go.dev/dl/" target="_blank" rel="noopener"&gt;Go公式ダウンロードページ &lt;i class="fa-solid fa-arrow-up-right-from-square"&gt;&lt;/i&gt;&lt;/a&gt;にアクセスします。&lt;/p&gt;</description></item><item><title>Hugo入門：静的サイトジェネレータの魅力</title><link>https://nexa-eng.com/posts/hugo/01-basic/01-intro/</link><pubDate>Sun, 04 May 2025 12:50:33 +0900</pubDate><guid>https://nexa-eng.com/posts/hugo/01-basic/01-intro/</guid><description>&lt;p&gt;こんにちは。&lt;a href="https://nexa-eng.com/#about"&gt;フリーランスエンジニアの市原&lt;i class="fas fa-link"&gt;&lt;/i&gt;&lt;/a&gt;です。&lt;/p&gt;
+&lt;p&gt;このページでは、Hugoという静的サイトジェネレーター（SSG）について初心者目線で情報を整理しています。&lt;br&gt;
+これからHugoを使ってみたい人の参考になれば幸いです。&lt;/p&gt;
+&lt;p&gt;ちなみにこのサイトは Hugo + toha + GitHub Pages + XSever Domainにより&lt;strong&gt;初年度1円&lt;/strong&gt;で公開されています。&lt;/p&gt;
+&lt;h2 id="静的サイトと動的サイトの違い"&gt;静的サイトと動的サイトの違い&lt;/h2&gt;
+&lt;p&gt;まず、静的サイトと動的サイトの違いを簡単に説明します。&lt;/p&gt;
+&lt;h3 id="静的サイトとは"&gt;静的サイトとは？&lt;/h3&gt;
+&lt;p&gt;静的サイトは、HTMLファイルをそのままサーバーに置いて配信するシンプルな仕組みです。&lt;br&gt;
+例えば、個人ブログやポートフォリオサイトなんかに向いています。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;メリット&lt;/strong&gt;: 高速、セキュア、ホスティングが安い&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;デメリット&lt;/strong&gt;: 動的な機能（ログインやコメント機能など）が難しい&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="動的サイトとは"&gt;動的サイトとは？&lt;/h3&gt;
+&lt;p&gt;一方、動的サイトは、ユーザーごとに異なるコンテンツを生成する仕組みです。&lt;br&gt;
+例えば、FacebookやAmazonのようなサイトがこれに当たります。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;メリット&lt;/strong&gt;: 柔軟でカスタマイズ性が高い&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;デメリット&lt;/strong&gt;: サーバーリソースが必要で、管理が複雑&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ログインで人によってコンテンツを変えたいとかなら別ですが、普通の個人ブログなら静的サイトで十分だと思います。
+Hugoだと問い合わせフォームからメールを送るのが難しかったりしますが、これはGoogle Formsを埋め込んだりで代用できます。&lt;/p&gt;
+&lt;h2 id="hugoの特徴"&gt;Hugoの特徴&lt;/h2&gt;
+&lt;p&gt;Hugoは静的サイトジェネレーターの中でも人気のあるツールの一つです。&lt;br&gt;
+以下の点が魅力的だと感じました。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;超高速&lt;/strong&gt;: Go言語で作られていて、ビルドがめちゃくちゃ速く自称世界最速。お作法に従ったファイル配置にすれば構造を勝手に解析してページやタグやリンクを作ってくれて超ラク。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Markdown対応&lt;/strong&gt;: 記事はマークダウンで書けるので、普段資料等をマークダウンで作っている私にピッタリ。ローカルHugoサーバを立ち上げれば、書きながらホットリロードで即確認できます。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;無料でオープンソース&lt;/strong&gt;: 豊富なテーマが揃っていて、カスタマイズもお作法さえわかれば結構簡単。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;柔軟性&lt;/strong&gt;: テンプレートやレイアウトの自由度が高い。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="他のcmsとの比較"&gt;他のCMSとの比較&lt;/h2&gt;
+&lt;p&gt;WordPressなどと比較して、Hugoには以下のようなメリットがあります。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;パフォーマンス&lt;/strong&gt;: 静的サイトなので、ページの読み込みが速い。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;セキュリティ&lt;/strong&gt;: データベースを使わないので、ハッキングリスクが低い。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;コスト&lt;/strong&gt;: 無料で使える。GitHub Pagesとの組み合わせで0円運用可能。GitHub Pagesはカスタムドメインも対応可能。XServer Domainなら初年度1円でGoogleアドセンス可能。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="他の選択肢まとめ"&gt;他の選択肢まとめ&lt;/h2&gt;
+&lt;p&gt;その他の静的サイトジェネレータの選択肢を(GPTさんが)整理しました。&lt;br&gt;
+ざっくり上から人気順です。そもそもマークダウンで書いたろ！って人が少ないんでしょうね。。。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: left"&gt;名前&lt;/th&gt;
+&lt;th style="text-align: left"&gt;特徴&lt;/th&gt;
+&lt;th style="text-align: left"&gt;公式サイト&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;Next.js&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;Reactベースのフレームワークで、静的サイトと動的サイトの両方を構築可能。SSRやSSGをサポートし、高度な機能が豊富。&lt;br&gt;&lt;strong&gt;評価&lt;/strong&gt;: Reactエコシステムの中心的存在で、最新技術を活用可能。&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://nextjs.org/" target="_blank" rel="noopener"&gt;https://nextjs.org/&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;Gatsby&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;Reactベースの静的サイトジェネレータで、GraphQLを使用して柔軟なデータ管理が可能。プラグインエコシステムが充実し、SEOに強い。&lt;br&gt;&lt;strong&gt;評価&lt;/strong&gt;: Reactユーザーに支持され、SEOやパフォーマンスに特化。&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://www.gatsbyjs.com/" target="_blank" rel="noopener"&gt;https://www.gatsbyjs.com/&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;Hugo&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;Go言語で構築された静的サイトジェネレータで、超高速なビルド速度を誇る。Markdown対応で簡単にコンテンツ作成が可能。&lt;br&gt;&lt;strong&gt;評価&lt;/strong&gt;: 高速性と柔軟性が評価され、初心者から上級者まで幅広く支持されている。&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://gohugo.io/" target="_blank" rel="noopener"&gt;https://gohugo.io/&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;Jekyll&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;Rubyで構築された静的サイトジェネレータ。GitHub Pagesと統合され無料ホスティング可能。プラグインやテーマが豊富でカスタマイズ性が高い。&lt;br&gt;&lt;strong&gt;評価&lt;/strong&gt;: 長年の実績とGitHub Pagesとの親和性が高い。&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://jekyllrb.com/" target="_blank" rel="noopener"&gt;https://jekyllrb.com/&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;Nuxt.js&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;Vue.jsベースのフレームワークで、SSGとSSRをサポート。プラグインやモジュールが豊富で柔軟な開発が可能。&lt;br&gt;&lt;strong&gt;評価&lt;/strong&gt;: Vue.jsユーザーにとって最適な選択肢として支持されている。&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://nuxtjs.org/" target="_blank" rel="noopener"&gt;https://nuxtjs.org/&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;Eleventy&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;JavaScriptで構築された軽量な静的サイトジェネレータで、シンプルで柔軟性が高く、高速。初心者にも扱いやすい。&lt;br&gt;&lt;strong&gt;評価&lt;/strong&gt;: 軽量でシンプルな構成が好まれ、JavaScriptユーザーに人気。&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://www.11ty.dev/" target="_blank" rel="noopener"&gt;https://www.11ty.dev/&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;Hexo&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;Node.jsベースの静的サイトジェネレータで、高速でMarkdownを使用して簡単にコンテンツ作成可能。ブログ向けに最適化。&lt;br&gt;&lt;strong&gt;評価&lt;/strong&gt;: ブログ用途に特化し、Node.jsユーザーに支持されている。&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://hexo.io/" target="_blank" rel="noopener"&gt;https://hexo.io/&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;Docusaurus&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;Facebookが開発した静的サイトジェネレータで、ドキュメントサイトやブログの作成に特化。Reactベースでカスタマイズ性が高い。&lt;br&gt;&lt;strong&gt;評価&lt;/strong&gt;: Facebook製で信頼性が高く、Reactユーザーに支持されている。&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://docusaurus.io/" target="_blank" rel="noopener"&gt;https://docusaurus.io/&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;MkDocs&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;Pythonで構築され、ドキュメントサイトの作成に特化。Markdownを使用して簡単にドキュメント作成可能。&lt;br&gt;&lt;strong&gt;評価&lt;/strong&gt;: 技術ドキュメント作成に特化し、Pythonユーザーに支持されている。&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://www.mkdocs.org/" target="_blank" rel="noopener"&gt;https://www.mkdocs.org/&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;Zola&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;Rustで構築された静的サイトジェネレータで、シンプルで高速、設定が簡単。デフォルトで多言語対応をサポート。&lt;br&gt;&lt;strong&gt;評価&lt;/strong&gt;: Rustユーザーに注目され、高速性が評価されている。&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://www.getzola.org/" target="_blank" rel="noopener"&gt;https://www.getzola.org/&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;Pelican&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;Pythonで構築された静的サイトジェネレータで、MarkdownやreStructuredTextをサポート。シンプルでPythonユーザーに最適。&lt;br&gt;&lt;strong&gt;評価&lt;/strong&gt;: Pythonユーザーに特化したツールとして利用されている。&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://getpelican.com" target="_blank" rel="noopener"&gt;https://getpelican.com&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;マークダウン対応、テンプレートがあってカスタム可能、運用コストが低い、それなりの人気とコミュニティ継続、&lt;br&gt;
+これらを満たすのがHugoでした。テーマ選びをミスらなければ、数分でテストページ公開できるし、ブログにも超使いやすいです。（紹介の多いテーマの後継HugoBlox/theme-academic-cvは構造がややこしすぎるし更新止まっているのでやめとけ）&lt;/p&gt;</description></item><item><title>Contact</title><link>https://nexa-eng.com/contact/</link><pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate><guid>https://nexa-eng.com/contact/</guid><description>&lt;p&gt;Please fill out the form below.&lt;/p&gt;
+&lt;div style="display: flex; justify-content: center; align-items: center;"&gt;
+&lt;iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfZzl6MoBPzs1lMJXCGu1kTf_KI0Myn5JeyZ7CS3q206R9YZw/viewform?embedded=true" width="640" height="1200" frameborder="0" marginheight="0" marginwidth="0"&gt;Loading…&lt;/iframe&gt;
+&lt;/div&gt;</description></item><item><title>Privacy Policy</title><link>https://nexa-eng.com/privacy-policy/</link><pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate><guid>https://nexa-eng.com/privacy-policy/</guid><description>&lt;p&gt;This website (&amp;ldquo;the Site&amp;rdquo;) respects the privacy of its visitors and is committed to protecting personal information. This Privacy Policy explains how personal information is handled on the Site.&lt;/p&gt;
+&lt;h2 id="1-collection-of-personal-information"&gt;1. Collection of Personal Information&lt;/h2&gt;
+&lt;p&gt;The Site may collect visitor information in the following ways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Google AdSense&lt;/strong&gt;&lt;br&gt;
+The Site uses Google AdSense to display advertisements. Third-party vendors, including Google, use cookies to serve ads based on a visitor&amp;rsquo;s past visits to the Site.&lt;br&gt;
+For more details, please refer to &lt;a href="https://policies.google.com/technologies/ads?hl=en" target="_blank" rel="noopener"&gt;Google&amp;rsquo;s Advertising Policy&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Introduction</title><link>https://nexa-eng.com/posts/category/introduction/</link><pubDate>Mon, 08 Jun 2020 08:06:25 +0600</pubDate><guid>https://nexa-eng.com/posts/category/introduction/</guid><description>&lt;p&gt;Greeting! This is an introduction post. This post tests the followings:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hero image is in the same directory as the post.&lt;/li&gt;
+&lt;li&gt;This post should be at top of the sidebar.&lt;/li&gt;
+&lt;li&gt;Post author should be the same as specified in &lt;code&gt;author.yaml&lt;/code&gt; file.&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Markdown Samples</title><link>https://nexa-eng.com/posts/category/markdown-sample/</link><pubDate>Mon, 08 Jun 2020 08:06:25 +0600</pubDate><guid>https://nexa-eng.com/posts/category/markdown-sample/</guid><description>&lt;p&gt;This is a sample post intended to test the followings:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A different post author.&lt;/li&gt;
+&lt;li&gt;Table of contents.&lt;/li&gt;
+&lt;li&gt;Markdown content rendering.&lt;/li&gt;
+&lt;li&gt;Math rendering.&lt;/li&gt;
+&lt;li&gt;Emoji rendering.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id="markdown-syntax-rendering"&gt;Markdown Syntax Rendering&lt;/h1&gt;
+&lt;h2 id="headings"&gt;Headings&lt;/h2&gt;
+&lt;p&gt;The following HTML &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;—&lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; elements represent six levels of section headings. &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; is the highest section level while &lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; is the lowest.&lt;/p&gt;
+&lt;h1 id="h1"&gt;H1&lt;/h1&gt;
+&lt;h2 id="h2"&gt;H2&lt;/h2&gt;
+&lt;h3 id="h3"&gt;H3&lt;/h3&gt;
+&lt;h4 id="h4"&gt;H4&lt;/h4&gt;
+&lt;h5 id="h5"&gt;H5&lt;/h5&gt;
+&lt;h6 id="h6"&gt;H6&lt;/h6&gt;
+&lt;h2 id="paragraph"&gt;Paragraph&lt;/h2&gt;
+&lt;p&gt;Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.&lt;/p&gt;</description></item><item><title>Rich Content</title><link>https://nexa-eng.com/posts/category/sub-category/rich-content/</link><pubDate>Mon, 08 Jun 2020 08:06:25 +0600</pubDate><guid>https://nexa-eng.com/posts/category/sub-category/rich-content/</guid><description>&lt;p&gt;This sample post tests the followings:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Category, sub-category nesting in the sidebar.&lt;/li&gt;
+&lt;li&gt;Hero image and other images are in &lt;code&gt;images&lt;/code&gt; folder inside this post directory.&lt;/li&gt;
+&lt;li&gt;Different media rendering like image, tweet, YouTube video, Vimeo video etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="image-sample"&gt;Image Sample&lt;/h3&gt;
 &lt;img src="https://nexa-eng.com/posts/category/sub-category/rich-content/images/forest.jpg"
 alt="Forest"
 class="center"
->
-&lt;div style="margin-top: rem;">&lt;/div>
-&lt;h3 id="tweet-sample">Tweet Sample&lt;/h3>
-&lt;blockquote class="twitter-tweet">&lt;p lang="en" dir="ltr">Owl bet you&amp;#39;ll lose this staring contest 🦉 &lt;a href="https://t.co/eJh4f2zncC">pic.twitter.com/eJh4f2zncC&lt;/a>&lt;/p>&amp;mdash; San Diego Zoo Wildlife Alliance (@sandiegozoo) &lt;a href="https://twitter.com/sandiegozoo/status/1453110110599868418?ref_src=twsrc%5Etfw">October 26, 2021&lt;/a>&lt;/blockquote>
-&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
-&lt;div style="margin-top: rem;">&lt;/div>
-&lt;h3 id="youtube-video-sample">YouTube Video Sample&lt;/h3>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ZJthWmvUzzc?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
-&lt;/div>
-&lt;div style="margin-top: rem;">&lt;/div>
-&lt;h3 id="vimeo-video-sample">Vimeo Video Sample&lt;/h3>
+&gt;
+&lt;div style="margin-top: rem;"&gt;&lt;/div&gt;
+&lt;h3 id="tweet-sample"&gt;Tweet Sample&lt;/h3&gt;
+&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;Owl bet you&amp;#39;ll lose this staring contest 🦉 &lt;a href="https://t.co/eJh4f2zncC"&gt;pic.twitter.com/eJh4f2zncC&lt;/a&gt;&lt;/p&gt;&amp;mdash; San Diego Zoo Wildlife Alliance (@sandiegozoo) &lt;a href="https://twitter.com/sandiegozoo/status/1453110110599868418?ref_src=twsrc%5Etfw"&gt;October 26, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+&lt;div style="margin-top: rem;"&gt;&lt;/div&gt;
+&lt;h3 id="youtube-video-sample"&gt;YouTube Video Sample&lt;/h3&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ZJthWmvUzzc?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div style="margin-top: rem;"&gt;&lt;/div&gt;
+&lt;h3 id="vimeo-video-sample"&gt;Vimeo Video Sample&lt;/h3&gt;
 &lt;div
-style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
 &lt;iframe
 src="https://player.vimeo.com/video/48912912?dnt=0"
-style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allow="fullscreen">
-&lt;/iframe>
-&lt;/div></description></item><item><title>Shortcodes Samples</title><link>https://nexa-eng.com/posts/category/shortcodes/</link><pubDate>Mon, 08 Jun 2020 08:06:25 +0600</pubDate><guid>https://nexa-eng.com/posts/category/shortcodes/</guid><description>&lt;p>This is a sample post intended to test the followings:&lt;/p>
-&lt;ul>
-&lt;li>Default hero image.&lt;/li>
-&lt;li>Different shortcodes.&lt;/li>
-&lt;/ul>
-&lt;h2 id="alert">Alert&lt;/h2>
-&lt;p>The following alerts are available in this theme.&lt;/p>
-&lt;div class="alert success">
-&lt;span>&lt;i data-feather="check-circle">&lt;/i>&lt;/span>
-&lt;span>&lt;strong>This is sample alert with &lt;code>type=&amp;quot;success&amp;quot;&lt;/code>.&lt;/strong>&lt;/span>
-&lt;/div>
-&lt;div class="alert danger">
-&lt;span>&lt;i data-feather="alert-octagon">&lt;/i>&lt;/span>
-&lt;span>&lt;strong>This is sample alert with &lt;code>type=&amp;quot;danger&amp;quot;&lt;/code>.&lt;/strong>&lt;/span>
-&lt;/div>
-&lt;div class="alert warning">
-&lt;span>&lt;i data-feather="alert-triangle">&lt;/i>&lt;/span>
-&lt;span>&lt;strong>This is sample alert with &lt;code>type=&amp;quot;warning&amp;quot;&lt;/code>.&lt;/strong>&lt;/span>
-&lt;/div>
-&lt;div class="alert info">
-&lt;span>&lt;i data-feather="info">&lt;/i>&lt;/span>
-&lt;span>&lt;strong>This is sample alert with &lt;code>type=&amp;quot;info&amp;quot;&lt;/code>.&lt;/strong>&lt;/span>
-&lt;/div>
-&lt;div class="alert dark">
-&lt;span>&lt;i data-feather="alert-circle">&lt;/i>&lt;/span>
-&lt;span>&lt;strong>This is sample alert with &lt;code>type=&amp;quot;dark&amp;quot;&lt;/code>.&lt;/strong>&lt;/span>
-&lt;/div>
-&lt;div class="alert primary">
-&lt;span>&lt;i data-feather="alert-circle">&lt;/i>&lt;/span>
-&lt;span>&lt;strong>This is sample alert with &lt;code>type=&amp;quot;primary&amp;quot;&lt;/code>.&lt;/strong>&lt;/span>
-&lt;/div>
-&lt;div class="alert secondary">
-&lt;span>&lt;i data-feather="alert-circle">&lt;/i>&lt;/span>
-&lt;span>&lt;strong>This is sample alert with &lt;code>type=&amp;quot;secondary&amp;quot;&lt;/code>.&lt;/strong>&lt;/span>
-&lt;/div>
-&lt;h2 id="image">Image&lt;/h2>
-&lt;h4 id="a-sample-image-without-any-attribute">A sample image without any attribute.&lt;/h4>
+style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allow="fullscreen"&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;</description></item><item><title>Shortcodes Samples</title><link>https://nexa-eng.com/posts/category/shortcodes/</link><pubDate>Mon, 08 Jun 2020 08:06:25 +0600</pubDate><guid>https://nexa-eng.com/posts/category/shortcodes/</guid><description>&lt;p&gt;This is a sample post intended to test the followings:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Default hero image.&lt;/li&gt;
+&lt;li&gt;Different shortcodes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="alert"&gt;Alert&lt;/h2&gt;
+&lt;p&gt;The following alerts are available in this theme.&lt;/p&gt;
+&lt;div class="alert success"&gt;
+&lt;span&gt;&lt;i data-feather="check-circle"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;span&gt;&lt;strong&gt;This is sample alert with &lt;code&gt;type=&amp;quot;success&amp;quot;&lt;/code&gt;.&lt;/strong&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="alert danger"&gt;
+&lt;span&gt;&lt;i data-feather="alert-octagon"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;span&gt;&lt;strong&gt;This is sample alert with &lt;code&gt;type=&amp;quot;danger&amp;quot;&lt;/code&gt;.&lt;/strong&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="alert warning"&gt;
+&lt;span&gt;&lt;i data-feather="alert-triangle"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;span&gt;&lt;strong&gt;This is sample alert with &lt;code&gt;type=&amp;quot;warning&amp;quot;&lt;/code&gt;.&lt;/strong&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="alert info"&gt;
+&lt;span&gt;&lt;i data-feather="info"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;span&gt;&lt;strong&gt;This is sample alert with &lt;code&gt;type=&amp;quot;info&amp;quot;&lt;/code&gt;.&lt;/strong&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="alert dark"&gt;
+&lt;span&gt;&lt;i data-feather="alert-circle"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;span&gt;&lt;strong&gt;This is sample alert with &lt;code&gt;type=&amp;quot;dark&amp;quot;&lt;/code&gt;.&lt;/strong&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="alert primary"&gt;
+&lt;span&gt;&lt;i data-feather="alert-circle"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;span&gt;&lt;strong&gt;This is sample alert with &lt;code&gt;type=&amp;quot;primary&amp;quot;&lt;/code&gt;.&lt;/strong&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="alert secondary"&gt;
+&lt;span&gt;&lt;i data-feather="alert-circle"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;span&gt;&lt;strong&gt;This is sample alert with &lt;code&gt;type=&amp;quot;secondary&amp;quot;&lt;/code&gt;.&lt;/strong&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;h2 id="image"&gt;Image&lt;/h2&gt;
+&lt;h4 id="a-sample-image-without-any-attribute"&gt;A sample image without any attribute.&lt;/h4&gt;
 &lt;img src="https://nexa-eng.com/posts/shortcodes/boat.jpg"
 alt="A boat at the sea"
->
-&lt;div style="margin-top: 3rem;">&lt;/div>
-&lt;h4 id="a-sample-image-with-height-and-width-attributes">A sample image with &lt;code>height&lt;/code> and &lt;code>width&lt;/code> attributes.&lt;/h4>
+&gt;
+&lt;div style="margin-top: 3rem;"&gt;&lt;/div&gt;
+&lt;h4 id="a-sample-image-with-height-and-width-attributes"&gt;A sample image with &lt;code&gt;height&lt;/code&gt; and &lt;code&gt;width&lt;/code&gt; attributes.&lt;/h4&gt;
 &lt;img src="https://nexa-eng.com/posts/shortcodes/boat.jpg"
 alt="A boat at the sea"
 width="600"
 height="400"
->
-&lt;div style="margin-top: 3rem;">&lt;/div>
-&lt;h4 id="a-center-aligned-image-with-height-and-width-attributes">A center aligned image with &lt;code>height&lt;/code> and &lt;code>width&lt;/code> attributes.&lt;/h4>
+&gt;
+&lt;div style="margin-top: 3rem;"&gt;&lt;/div&gt;
+&lt;h4 id="a-center-aligned-image-with-height-and-width-attributes"&gt;A center aligned image with &lt;code&gt;height&lt;/code&gt; and &lt;code&gt;width&lt;/code&gt; attributes.&lt;/h4&gt;
 &lt;img src="https://nexa-eng.com/posts/shortcodes/boat.jpg"
 alt="A boat at the sea"
 width="600"
 height="400"
 class="center"
->
-&lt;div style="margin-top: 3rem;">&lt;/div>
-&lt;h4 id="a-image-with-float-attribute">A image with &lt;code>float&lt;/code> attribute.&lt;/h4>
+&gt;
+&lt;div style="margin-top: 3rem;"&gt;&lt;/div&gt;
+&lt;h4 id="a-image-with-float-attribute"&gt;A image with &lt;code&gt;float&lt;/code&gt; attribute.&lt;/h4&gt;
 &lt;img src="https://nexa-eng.com/posts/shortcodes/boat.jpg"
 alt="A boat at the sea"
 width="500"
 height="200"
 style="float: right;"
->
-&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras egestas lectus sed leo ultricies ultricies. Praesent tellus risus, eleifend vel efficitur ac, venenatis sit amet sem. Ut ut egestas erat. Fusce ut leo turpis. Morbi consectetur sed lacus vitae vehicula. Cras gravida turpis id eleifend volutpat. Suspendisse nec ipsum eu erat finibus dictum. Morbi volutpat nulla purus, vel maximus ex molestie id. Nullam posuere est urna, at fringilla eros venenatis quis.&lt;/p></description></item><item><title>Go বেসিক</title><link>https://nexa-eng.com/notes/go/basic/_index.bn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://nexa-eng.com/notes/go/basic/_index.bn/</guid><description/></item><item><title>Introduction</title><link>https://nexa-eng.com/notes/go/basic/introduction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://nexa-eng.com/notes/go/basic/introduction/</guid><description>&lt;!-- A Sample Program -->
-&lt;div class="note-card ">
-&lt;div class="item">
-&lt;h5 class="note-title">&lt;span>Hello World&lt;/span>&lt;/h5>
-&lt;div class="card">
-&lt;div class="card-body">&lt;p>A sample go program is show here.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">package&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> &lt;span style="color:#e6db74">&amp;#34;fmt&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">func&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>() {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">message&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#a6e22e">greetMe&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;world&amp;#34;&lt;/span>)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">fmt&lt;/span>.&lt;span style="color:#a6e22e">Println&lt;/span>(&lt;span style="color:#a6e22e">message&lt;/span>)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">func&lt;/span> &lt;span style="color:#a6e22e">greetMe&lt;/span>(&lt;span style="color:#a6e22e">name&lt;/span> &lt;span style="color:#66d9ef">string&lt;/span>) &lt;span style="color:#66d9ef">string&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#e6db74">&amp;#34;Hello, &amp;#34;&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#a6e22e">name&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#e6db74">&amp;#34;!&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Run the program as below:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ go run hello.go
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;!-- Declaring Variables -->
-&lt;div class="note-card ">
-&lt;div class="item">
-&lt;h5 class="note-title">&lt;span>Variables&lt;/span>&lt;/h5>
-&lt;div class="card">
-&lt;div class="card-body">&lt;p>&lt;strong>Normal Declaration:&lt;/strong>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">var&lt;/span> &lt;span style="color:#a6e22e">msg&lt;/span> &lt;span style="color:#66d9ef">string&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">msg&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;Hello&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
-&lt;/div>
-&lt;div class="card">
-&lt;div class="card-body">&lt;p>&lt;strong>Shortcut:&lt;/strong>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">msg&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;Hello&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;!-- Declaring Constants -->
-&lt;div class="note-card ">
-&lt;div class="item">
-&lt;h5 class="note-title">&lt;span>Constants&lt;/span>&lt;/h5>
-&lt;div class="card">
-&lt;div class="card-body">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#a6e22e">Phi&lt;/span> = &lt;span style="color:#ae81ff">1.618&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div></description></item><item><title>Basic Types</title><link>https://nexa-eng.com/notes/go/basic/types/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://nexa-eng.com/notes/go/basic/types/</guid><description>&lt;!-- String Type -->
-&lt;div class="note-card ">
-&lt;div class="item">
-&lt;h5 class="note-title">&lt;span>Strings&lt;/span>&lt;/h5>
-&lt;div class="card">
-&lt;div class="card-body">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">str&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;Hello&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Multiline string&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">str&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#e6db74">`Multiline
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">string`&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;!-- Number Types -->
-&lt;div class="note-card ">
-&lt;div class="item">
-&lt;h5 class="note-title">&lt;span>Numbers&lt;/span>&lt;/h5>
-&lt;div class="card">
-&lt;div class="card-body">&lt;p>Typical types&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">num&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#ae81ff">3&lt;/span> &lt;span style="color:#75715e">// int&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">num&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#ae81ff">3.&lt;/span> &lt;span style="color:#75715e">// float64&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">num&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#ae81ff">3&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#ae81ff">4i&lt;/span> &lt;span style="color:#75715e">// complex128&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">num&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> byte(&lt;span style="color:#e6db74">&amp;#39;a&amp;#39;&lt;/span>) &lt;span style="color:#75715e">// byte (alias for uint8)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Other Types&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">var&lt;/span> &lt;span style="color:#a6e22e">u&lt;/span> &lt;span style="color:#66d9ef">uint&lt;/span> = &lt;span style="color:#ae81ff">7&lt;/span> &lt;span style="color:#75715e">// uint (unsigned)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">var&lt;/span> &lt;span style="color:#a6e22e">p&lt;/span> &lt;span style="color:#66d9ef">float32&lt;/span> = &lt;span style="color:#ae81ff">22.7&lt;/span> &lt;span style="color:#75715e">// 32-bit float&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;!----------- Arrays ------>
-&lt;div class="note-card ">
-&lt;div class="item">
-&lt;h5 class="note-title">&lt;span>Arrays&lt;/span>&lt;/h5>
-&lt;div class="card">
-&lt;div class="card-body">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// var numbers [5]int&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">numbers&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> [&lt;span style="color:#f92672">...&lt;/span>]&lt;span style="color:#66d9ef">int&lt;/span>{&lt;span style="color:#ae81ff">0&lt;/span>, &lt;span style="color:#ae81ff">0&lt;/span>, &lt;span style="color:#ae81ff">0&lt;/span>, &lt;span style="color:#ae81ff">0&lt;/span>, &lt;span style="color:#ae81ff">0&lt;/span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;!-- Pointers -->
-&lt;div class="note-card medium-note">
-&lt;div class="item">
-&lt;h5 class="note-title">&lt;span>Pointers&lt;/span>&lt;/h5>
-&lt;div class="card">
-&lt;div class="card-body">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">func&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span> () {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">b&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#f92672">*&lt;/span>&lt;span style="color:#a6e22e">getPointer&lt;/span>()
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">fmt&lt;/span>.&lt;span style="color:#a6e22e">Println&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;Value is&amp;#34;&lt;/span>, &lt;span style="color:#a6e22e">b&lt;/span>)
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">func&lt;/span> &lt;span style="color:#a6e22e">getPointer&lt;/span> () (&lt;span style="color:#a6e22e">myPointer&lt;/span> &lt;span style="color:#f92672">*&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">a&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#ae81ff">234&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#f92672">&amp;amp;&lt;/span>&lt;span style="color:#a6e22e">a&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">a&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> new(&lt;span style="color:#66d9ef">int&lt;/span>)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">*&lt;/span>&lt;span style="color:#a6e22e">a&lt;/span> = &lt;span style="color:#ae81ff">234&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Pointers point to a memory location of a variable. Go is fully garbage-collected.&lt;/p></description></item><item><title>অ্যাডভান্সড</title><link>https://nexa-eng.com/notes/go/advanced/_index.bn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://nexa-eng.com/notes/go/advanced/_index.bn/</guid><description/></item><item><title>Flow Control</title><link>https://nexa-eng.com/notes/go/basic/flow-control/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://nexa-eng.com/notes/go/basic/flow-control/</guid><description>&lt;!-- Condition -->
-&lt;div class="note-card ">
-&lt;div class="item">
-&lt;h5 class="note-title">&lt;span>Condition&lt;/span>&lt;/h5>
-&lt;div class="card">
-&lt;div class="card-body">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#a6e22e">day&lt;/span> &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#e6db74">&amp;#34;sunday&amp;#34;&lt;/span> &lt;span style="color:#f92672">||&lt;/span> &lt;span style="color:#a6e22e">day&lt;/span> &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#e6db74">&amp;#34;saturday&amp;#34;&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">rest&lt;/span>()
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>} &lt;span style="color:#66d9ef">else&lt;/span> &lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#a6e22e">day&lt;/span> &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#e6db74">&amp;#34;monday&amp;#34;&lt;/span> &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> &lt;span style="color:#a6e22e">isTired&lt;/span>() {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">groan&lt;/span>()
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>} &lt;span style="color:#66d9ef">else&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">work&lt;/span>()
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#a6e22e">_&lt;/span>, &lt;span style="color:#a6e22e">err&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#a6e22e">doThing&lt;/span>(); &lt;span style="color:#a6e22e">err&lt;/span> &lt;span style="color:#f92672">!=&lt;/span> &lt;span style="color:#66d9ef">nil&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">fmt&lt;/span>.&lt;span style="color:#a6e22e">Println&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;Uh oh&amp;#34;&lt;/span>)
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;!-- Switch -->
-&lt;div class="note-card ">
-&lt;div class="item">
-&lt;h5 class="note-title">&lt;span>Switch&lt;/span>&lt;/h5>
-&lt;div class="card">
-&lt;div class="card-body">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">switch&lt;/span> &lt;span style="color:#a6e22e">day&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">case&lt;/span> &lt;span style="color:#e6db74">&amp;#34;sunday&amp;#34;&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// cases don&amp;#39;t &amp;#34;fall through&amp;#34; by default!&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">fallthrough&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">case&lt;/span> &lt;span style="color:#e6db74">&amp;#34;saturday&amp;#34;&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">rest&lt;/span>()
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">default&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">work&lt;/span>()
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;!-- Loop -->
-&lt;div class="note-card ">
-&lt;div class="item">
-&lt;h5 class="note-title">&lt;span>Loop&lt;/span>&lt;/h5>
-&lt;div class="card">
-&lt;div class="card-body">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">for&lt;/span> &lt;span style="color:#a6e22e">count&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; &lt;span style="color:#a6e22e">count&lt;/span> &lt;span style="color:#f92672">&amp;lt;=&lt;/span> &lt;span style="color:#ae81ff">10&lt;/span>; &lt;span style="color:#a6e22e">count&lt;/span>&lt;span style="color:#f92672">++&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">fmt&lt;/span>.&lt;span style="color:#a6e22e">Println&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;My counter is at&amp;#34;&lt;/span>, &lt;span style="color:#a6e22e">count&lt;/span>)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">entry&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> []&lt;span style="color:#66d9ef">string&lt;/span>{&lt;span style="color:#e6db74">&amp;#34;Jack&amp;#34;&lt;/span>,&lt;span style="color:#e6db74">&amp;#34;John&amp;#34;&lt;/span>,&lt;span style="color:#e6db74">&amp;#34;Jones&amp;#34;&lt;/span>}
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">for&lt;/span> &lt;span style="color:#a6e22e">i&lt;/span>, &lt;span style="color:#a6e22e">val&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#66d9ef">range&lt;/span> &lt;span style="color:#a6e22e">entry&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">fmt&lt;/span>.&lt;span style="color:#a6e22e">Printf&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;At position %d, the character %s is present\n&amp;#34;&lt;/span>, &lt;span style="color:#a6e22e">i&lt;/span>, &lt;span style="color:#a6e22e">val&lt;/span>)
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">n&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">x&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#ae81ff">42&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">for&lt;/span> &lt;span style="color:#a6e22e">n&lt;/span> &lt;span style="color:#f92672">!=&lt;/span> &lt;span style="color:#a6e22e">x&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">n&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#a6e22e">guess&lt;/span>()
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div></description></item><item><title>File Manipulation</title><link>https://nexa-eng.com/notes/go/advanced/files/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://nexa-eng.com/notes/go/advanced/files/</guid><description>&lt;!-- Condition -->
-&lt;div class="note-card ">
-&lt;div class="item">
-&lt;h5 class="note-title">&lt;span>Condition&lt;/span>&lt;/h5>
-&lt;div class="card">
-&lt;div class="card-body">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#a6e22e">day&lt;/span> &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#e6db74">&amp;#34;sunday&amp;#34;&lt;/span> &lt;span style="color:#f92672">||&lt;/span> &lt;span style="color:#a6e22e">day&lt;/span> &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#e6db74">&amp;#34;saturday&amp;#34;&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">rest&lt;/span>()
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>} &lt;span style="color:#66d9ef">else&lt;/span> &lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#a6e22e">day&lt;/span> &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#e6db74">&amp;#34;monday&amp;#34;&lt;/span> &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> &lt;span style="color:#a6e22e">isTired&lt;/span>() {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">groan&lt;/span>()
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>} &lt;span style="color:#66d9ef">else&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">work&lt;/span>()
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#a6e22e">_&lt;/span>, &lt;span style="color:#a6e22e">err&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#a6e22e">doThing&lt;/span>(); &lt;span style="color:#a6e22e">err&lt;/span> &lt;span style="color:#f92672">!=&lt;/span> &lt;span style="color:#66d9ef">nil&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">fmt&lt;/span>.&lt;span style="color:#a6e22e">Println&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;Uh oh&amp;#34;&lt;/span>)
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div></description></item><item><title>Bash Variables</title><link>https://nexa-eng.com/notes/bash/basic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://nexa-eng.com/notes/bash/basic/</guid><description>&lt;!-- Variable -->
-&lt;div class="note-card ">
-&lt;div class="item">
-&lt;h5 class="note-title">&lt;span>Variable&lt;/span>&lt;/h5>
-&lt;div class="card">
-&lt;div class="card-body">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>NAME&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;John&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>echo $NAME
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>echo &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$NAME&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>echo &lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#e6db74">${&lt;/span>NAME&lt;span style="color:#e6db74">}&lt;/span>&lt;span style="color:#e6db74">
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;!-- Condition -->
-&lt;div class="note-card ">
-&lt;div class="item">
-&lt;h5 class="note-title">&lt;span>Condition&lt;/span>&lt;/h5>
-&lt;div class="card">
-&lt;div class="card-body">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#f92672">[[&lt;/span> -z &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$string&lt;span style="color:#e6db74">&amp;#34;&lt;/span> &lt;span style="color:#f92672">]]&lt;/span>; &lt;span style="color:#66d9ef">then&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> echo &lt;span style="color:#e6db74">&amp;#34;String is empty&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">elif&lt;/span> &lt;span style="color:#f92672">[[&lt;/span> -n &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$string&lt;span style="color:#e6db74">&amp;#34;&lt;/span> &lt;span style="color:#f92672">]]&lt;/span>; &lt;span style="color:#66d9ef">then&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> echo &lt;span style="color:#e6db74">&amp;#34;String is not empty&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">fi&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div></description></item><item><title>Go এর নোট সমূহ</title><link>https://nexa-eng.com/notes/go/_index.bn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://nexa-eng.com/notes/go/_index.bn/</guid><description>&lt;h1 id="go-notes">Go Notes&lt;/h1></description></item><item><title>ব্যাশের নোট সমূহ</title><link>https://nexa-eng.com/notes/bash/_index.bn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://nexa-eng.com/notes/bash/_index.bn/</guid><description>&lt;h1 id="bash-notes">Bash Notes&lt;/h1></description></item></channel></rss>
+&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras egestas lectus sed leo ultricies ultricies. Praesent tellus risus, eleifend vel efficitur ac, venenatis sit amet sem. Ut ut egestas erat. Fusce ut leo turpis. Morbi consectetur sed lacus vitae vehicula. Cras gravida turpis id eleifend volutpat. Suspendisse nec ipsum eu erat finibus dictum. Morbi volutpat nulla purus, vel maximus ex molestie id. Nullam posuere est urna, at fringilla eros venenatis quis.&lt;/p&gt;</description></item><item><title>Go বেসিক</title><link>https://nexa-eng.com/notes/go/basic/_index.bn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://nexa-eng.com/notes/go/basic/_index.bn/</guid><description/></item><item><title>Introduction</title><link>https://nexa-eng.com/notes/go/basic/introduction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://nexa-eng.com/notes/go/basic/introduction/</guid><description>&lt;!-- A Sample Program --&gt;
+&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;Hello World&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;p&gt;A sample go program is show here.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;package&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;main&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;import&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;fmt&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;func&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;main&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;message&lt;/span&gt; &lt;span style="color:#f92672"&gt;:=&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;greetMe&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;world&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;fmt&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;Println&lt;/span&gt;(&lt;span style="color:#a6e22e"&gt;message&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;func&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;greetMe&lt;/span&gt;(&lt;span style="color:#a6e22e"&gt;name&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;string&lt;/span&gt;) &lt;span style="color:#66d9ef"&gt;string&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Hello, &amp;#34;&lt;/span&gt; &lt;span style="color:#f92672"&gt;+&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;name&lt;/span&gt; &lt;span style="color:#f92672"&gt;+&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;!&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Run the program as below:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ go run hello.go
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Declaring Variables --&gt;
+&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;Variables&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;p&gt;&lt;strong&gt;Normal Declaration:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;var&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;msg&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;string&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;msg&lt;/span&gt; = &lt;span style="color:#e6db74"&gt;&amp;#34;Hello&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;p&gt;&lt;strong&gt;Shortcut:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;msg&lt;/span&gt; &lt;span style="color:#f92672"&gt;:=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Hello&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Declaring Constants --&gt;
+&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;Constants&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;const&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Phi&lt;/span&gt; = &lt;span style="color:#ae81ff"&gt;1.618&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>Basic Types</title><link>https://nexa-eng.com/notes/go/basic/types/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://nexa-eng.com/notes/go/basic/types/</guid><description>&lt;!-- String Type --&gt;
+&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;Strings&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;str&lt;/span&gt; &lt;span style="color:#f92672"&gt;:=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Hello&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Multiline string&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;str&lt;/span&gt; &lt;span style="color:#f92672"&gt;:=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;`Multiline
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;string`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Number Types --&gt;
+&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;Numbers&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;p&gt;Typical types&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;num&lt;/span&gt; &lt;span style="color:#f92672"&gt;:=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;3&lt;/span&gt; &lt;span style="color:#75715e"&gt;// int&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;num&lt;/span&gt; &lt;span style="color:#f92672"&gt;:=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;3.&lt;/span&gt; &lt;span style="color:#75715e"&gt;// float64&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;num&lt;/span&gt; &lt;span style="color:#f92672"&gt;:=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;3&lt;/span&gt; &lt;span style="color:#f92672"&gt;+&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;4i&lt;/span&gt; &lt;span style="color:#75715e"&gt;// complex128&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;num&lt;/span&gt; &lt;span style="color:#f92672"&gt;:=&lt;/span&gt; byte(&lt;span style="color:#e6db74"&gt;&amp;#39;a&amp;#39;&lt;/span&gt;) &lt;span style="color:#75715e"&gt;// byte (alias for uint8)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Other Types&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;var&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;u&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;uint&lt;/span&gt; = &lt;span style="color:#ae81ff"&gt;7&lt;/span&gt; &lt;span style="color:#75715e"&gt;// uint (unsigned)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;var&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;p&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;float32&lt;/span&gt; = &lt;span style="color:#ae81ff"&gt;22.7&lt;/span&gt; &lt;span style="color:#75715e"&gt;// 32-bit float&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!----------- Arrays ------&gt;
+&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;Arrays&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// var numbers [5]int&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;numbers&lt;/span&gt; &lt;span style="color:#f92672"&gt;:=&lt;/span&gt; [&lt;span style="color:#f92672"&gt;...&lt;/span&gt;]&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt;{&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;, &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;, &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;, &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;, &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Pointers --&gt;
+&lt;div class="note-card medium-note"&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;Pointers&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;func&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;main&lt;/span&gt; () {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;b&lt;/span&gt; &lt;span style="color:#f92672"&gt;:=&lt;/span&gt; &lt;span style="color:#f92672"&gt;*&lt;/span&gt;&lt;span style="color:#a6e22e"&gt;getPointer&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;fmt&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;Println&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;Value is&amp;#34;&lt;/span&gt;, &lt;span style="color:#a6e22e"&gt;b&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;func&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;getPointer&lt;/span&gt; () (&lt;span style="color:#a6e22e"&gt;myPointer&lt;/span&gt; &lt;span style="color:#f92672"&gt;*&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;a&lt;/span&gt; &lt;span style="color:#f92672"&gt;:=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;234&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;amp;&lt;/span&gt;&lt;span style="color:#a6e22e"&gt;a&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;a&lt;/span&gt; &lt;span style="color:#f92672"&gt;:=&lt;/span&gt; new(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;*&lt;/span&gt;&lt;span style="color:#a6e22e"&gt;a&lt;/span&gt; = &lt;span style="color:#ae81ff"&gt;234&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Pointers point to a memory location of a variable. Go is fully garbage-collected.&lt;/p&gt;</description></item><item><title>অ্যাডভান্সড</title><link>https://nexa-eng.com/notes/go/advanced/_index.bn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://nexa-eng.com/notes/go/advanced/_index.bn/</guid><description/></item><item><title>Flow Control</title><link>https://nexa-eng.com/notes/go/basic/flow-control/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://nexa-eng.com/notes/go/basic/flow-control/</guid><description>&lt;!-- Condition --&gt;
+&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;Condition&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;day&lt;/span&gt; &lt;span style="color:#f92672"&gt;==&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;sunday&amp;#34;&lt;/span&gt; &lt;span style="color:#f92672"&gt;||&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;day&lt;/span&gt; &lt;span style="color:#f92672"&gt;==&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;saturday&amp;#34;&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;rest&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;} &lt;span style="color:#66d9ef"&gt;else&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;day&lt;/span&gt; &lt;span style="color:#f92672"&gt;==&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;monday&amp;#34;&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;isTired&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;groan&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;} &lt;span style="color:#66d9ef"&gt;else&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;work&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;_&lt;/span&gt;, &lt;span style="color:#a6e22e"&gt;err&lt;/span&gt; &lt;span style="color:#f92672"&gt;:=&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;doThing&lt;/span&gt;(); &lt;span style="color:#a6e22e"&gt;err&lt;/span&gt; &lt;span style="color:#f92672"&gt;!=&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;nil&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;fmt&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;Println&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;Uh oh&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Switch --&gt;
+&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;Switch&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;switch&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;day&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;case&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;sunday&amp;#34;&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// cases don&amp;#39;t &amp;#34;fall through&amp;#34; by default!&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;fallthrough&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;case&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;saturday&amp;#34;&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;rest&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;default&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;work&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Loop --&gt;
+&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;Loop&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;count&lt;/span&gt; &lt;span style="color:#f92672"&gt;:=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;; &lt;span style="color:#a6e22e"&gt;count&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;lt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;10&lt;/span&gt;; &lt;span style="color:#a6e22e"&gt;count&lt;/span&gt;&lt;span style="color:#f92672"&gt;++&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;fmt&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;Println&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;My counter is at&amp;#34;&lt;/span&gt;, &lt;span style="color:#a6e22e"&gt;count&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;entry&lt;/span&gt; &lt;span style="color:#f92672"&gt;:=&lt;/span&gt; []&lt;span style="color:#66d9ef"&gt;string&lt;/span&gt;{&lt;span style="color:#e6db74"&gt;&amp;#34;Jack&amp;#34;&lt;/span&gt;,&lt;span style="color:#e6db74"&gt;&amp;#34;John&amp;#34;&lt;/span&gt;,&lt;span style="color:#e6db74"&gt;&amp;#34;Jones&amp;#34;&lt;/span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;i&lt;/span&gt;, &lt;span style="color:#a6e22e"&gt;val&lt;/span&gt; &lt;span style="color:#f92672"&gt;:=&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;range&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;entry&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;fmt&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;Printf&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;At position %d, the character %s is present\n&amp;#34;&lt;/span&gt;, &lt;span style="color:#a6e22e"&gt;i&lt;/span&gt;, &lt;span style="color:#a6e22e"&gt;val&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;n&lt;/span&gt; &lt;span style="color:#f92672"&gt;:=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;x&lt;/span&gt; &lt;span style="color:#f92672"&gt;:=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;42&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;n&lt;/span&gt; &lt;span style="color:#f92672"&gt;!=&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;x&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;n&lt;/span&gt; &lt;span style="color:#f92672"&gt;:=&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;guess&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>File Manipulation</title><link>https://nexa-eng.com/notes/go/advanced/files/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://nexa-eng.com/notes/go/advanced/files/</guid><description>&lt;!-- Condition --&gt;
+&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;Condition&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;day&lt;/span&gt; &lt;span style="color:#f92672"&gt;==&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;sunday&amp;#34;&lt;/span&gt; &lt;span style="color:#f92672"&gt;||&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;day&lt;/span&gt; &lt;span style="color:#f92672"&gt;==&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;saturday&amp;#34;&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;rest&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;} &lt;span style="color:#66d9ef"&gt;else&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;day&lt;/span&gt; &lt;span style="color:#f92672"&gt;==&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;monday&amp;#34;&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;isTired&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;groan&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;} &lt;span style="color:#66d9ef"&gt;else&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;work&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;_&lt;/span&gt;, &lt;span style="color:#a6e22e"&gt;err&lt;/span&gt; &lt;span style="color:#f92672"&gt;:=&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;doThing&lt;/span&gt;(); &lt;span style="color:#a6e22e"&gt;err&lt;/span&gt; &lt;span style="color:#f92672"&gt;!=&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;nil&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;fmt&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;Println&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;Uh oh&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>Bash Variables</title><link>https://nexa-eng.com/notes/bash/basic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://nexa-eng.com/notes/bash/basic/</guid><description>&lt;!-- Variable --&gt;
+&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;Variable&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;NAME&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;John&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo $NAME
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo &lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;$NAME&lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo &lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;&lt;span style="color:#e6db74"&gt;${&lt;/span&gt;NAME&lt;span style="color:#e6db74"&gt;}&lt;/span&gt;&lt;span style="color:#e6db74"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Condition --&gt;
+&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;Condition&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; &lt;span style="color:#f92672"&gt;[[&lt;/span&gt; -z &lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;$string&lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt; &lt;span style="color:#f92672"&gt;]]&lt;/span&gt;; &lt;span style="color:#66d9ef"&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; echo &lt;span style="color:#e6db74"&gt;&amp;#34;String is empty&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;elif&lt;/span&gt; &lt;span style="color:#f92672"&gt;[[&lt;/span&gt; -n &lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;$string&lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt; &lt;span style="color:#f92672"&gt;]]&lt;/span&gt;; &lt;span style="color:#66d9ef"&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; echo &lt;span style="color:#e6db74"&gt;&amp;#34;String is not empty&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>Go এর নোট সমূহ</title><link>https://nexa-eng.com/notes/go/_index.bn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://nexa-eng.com/notes/go/_index.bn/</guid><description>&lt;h1 id="go-notes"&gt;Go Notes&lt;/h1&gt;</description></item><item><title>ব্যাশের নোট সমূহ</title><link>https://nexa-eng.com/notes/bash/_index.bn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://nexa-eng.com/notes/bash/_index.bn/</guid><description>&lt;h1 id="bash-notes"&gt;Bash Notes&lt;/h1&gt;</description></item></channel></rss>
