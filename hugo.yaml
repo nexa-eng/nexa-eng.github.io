@@ -20,24 +20,24 @@ module:
 # Manage languages
 # For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
 languages:
-  en:
-    languageCode: en
-    languageName: English
-    title: "Nexa Engineering Co., Ltd."
-    weight: 2
+#  en:
+#    languageCode: en
+#    languageName: English
+#    title: "Nexa Engineering Co., Ltd."
+#    weight: 2
 # 追加: 日本語設定
-#  ja:
-#    languageCode: ja
-#    languageName: 日本語
-#    title: "Nexa Engineering株式会社"
-#    weight: 1
+  ja:
+    languageCode: ja
+    languageName: 日本語
+    title: "Nexa Engineering株式会社"
+    weight: 1
 #  bn:
 #    languageCode: bn
 #    languageName: বাংলা
 #    title: জনের ব্লগ
 #    weight: 2
 # default language for the content
-defaultContentLanguage: en
+defaultContentLanguage: ja
 
 
 # Allow raw html in markdown file
