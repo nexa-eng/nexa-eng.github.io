@@ -1,6 +1,6 @@
 # some information about you
 name: "Nexa Engineering Co., Ltd."
-nickname: "Nexa Engineering"
+nickname: "Nexa Engineering Co., Ltd."
 # greeting message before your name. it will default to "Hi! I am" if not provided
 greeting: "Welcome to"
 image: "images/author/ken.png"

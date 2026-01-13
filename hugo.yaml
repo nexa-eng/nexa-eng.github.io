@@ -26,11 +26,11 @@ languages:
     title: "Nexa Engineering Co., Ltd."
     weight: 2
 # 追加: 日本語設定
-  ja:
-    languageCode: ja
-    languageName: 日本語
-    title: "Nexa Engineering株式会社"
-    weight: 1
+#  ja:
+#    languageCode: ja
+#    languageName: 日本語
+#    title: "Nexa Engineering株式会社"
+#    weight: 1
 #  bn:
 #    languageCode: bn
 #    languageName: বাংলা
