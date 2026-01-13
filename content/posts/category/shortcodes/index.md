@@ -7,7 +7,7 @@ menu:
     name: Shortcodes Sample
     identifier: shortcodes
     parent: category
-    weight: 40
+    weight: 940
 hero: boat.jpg
 mermaid: true
 ---
