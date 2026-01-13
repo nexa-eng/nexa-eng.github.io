@@ -33,6 +33,7 @@ customMenus:
 openGraph:
   title: Nexa Engineering Co., Ltd.
   type: website
-  description: Nexa Engineering: Your dedicated DX partner for SMEs. We provide 'accessible IT' including AI agents for real estate automation and dashboards for steel and manufacturing industries. Leveraging field-proven expertise, we deliver practical solutions that transform your business operations.
+  description: >
+    Nexa Engineering: Your dedicated DX partner for SMEs. We provide 'accessible IT' including AI agents for real estate automation and dashboards for steel and manufacturing industries. Leveraging field-proven expertise, we deliver practical solutions that transform your business operations.
   image: images/author/ken.png
   url: https://nexa-eng.com
