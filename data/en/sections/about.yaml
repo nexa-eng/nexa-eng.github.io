@@ -26,11 +26,11 @@ summary: 'I am Kentaro Ichihara, the representative of Nexa Engineering and a fr
 socialLinks:
 - name: Email
   icon: "fas fa-envelope"
-  url: "kentaro.ichihara@nexa-eng.com"
+  url: "contact@nexa-eng.com"
 
 - name: Github
   icon: "fab fa-github"
-  url: "https://www.github.com/ichiken-usa"
+  url: "https://www.github.com/nexa-eng"
 
 - name: Twitter
   icon: "fab fa-twitter"
@@ -39,8 +39,8 @@ socialLinks:
 # You can put custom buttons to link your relevant resources.
 # For example, you can put link for your resume.
 resourceLinks:
-- title: "My Resume - Under Construction"
-  url: "files/resume.pdf"
+- title: "Under Construction"
+  url: "#"
 
 # Show your badges
 # You can show your verifiable certificates from https://www.credly.com.
