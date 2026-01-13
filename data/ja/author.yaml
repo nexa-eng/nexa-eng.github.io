@@ -1,6 +1,6 @@
 # some information about you
-name: "Nexa Engineering Co., Ltd."
-nickname: "Nexa Engineering Co., Ltd."
+name: "Nexa Engineering株式会社"
+nickname: "Nexa Engineering株式会社"
 # greeting message before your name. it will default to "Hi! I am" if not provided
 greeting: "Welcome to"
 image: "images/author/ken.png"
@@ -14,6 +14,6 @@ contactInfo:
 
 # some summary about what you do
 summary:
-  - Providing 'Accessible IT' solutions tailored for SMEs in Real Estate and Manufacturing.
-  - Specializing in AI agents and business dashboards to automate and visualize operations.
-  - A practical DX partner led by an engineer with 15 years of manufacturing expertise.
+  - 中小企業に特化した「手の届くIT」を提供します。
+  - AIエージェントや経営ダッシュボードで、業務の自動化と可視化を実現。
+  - 15年の製造現場経験を持つエンジニアが、実用的なDXを伴走支援します。
