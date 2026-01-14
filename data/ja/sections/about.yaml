@@ -8,7 +8,7 @@ section:
   template: sections/about.html
 
 # your designation
-designation: 現場に潜り課題に挑む「御社専属エンジニア」という頼り方
+designation: 現場に潜り課題に挑む貴社「専属エンジニア」という頼り方
 # your company information
 #company:
 #  name: Nexa Engineering
