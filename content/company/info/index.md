@@ -1,13 +1,13 @@
 ---
 title: 会社概要
 date: 2025-09-12
+hero: 20151004133605-a8b28334-me.jpg
 menu:
   sidebar:
     name: 会社概要
     identifier: info
     parent: company
     weight: 10
-hero: 20151004133605-a8b28334-me.jpg
 ---
 
 ## 会社名
@@ -37,10 +37,6 @@ Nexa Engineering株式会社
 ## 資本金
 
 100万円
-
-## 従業員数
-
-1名
 
 ## 法人番号
 
