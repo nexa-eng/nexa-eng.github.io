@@ -18,6 +18,11 @@ customMenus:
     hideFromNavbar: false
     showOnFooter: true
 
+  - name: サービス
+    url: /services/
+    hideFromNavbar: false
+    showOnFooter: true
+
   # Privacy Policy menu
   - name: Privacy Policy
     url: /privacy-policy/
