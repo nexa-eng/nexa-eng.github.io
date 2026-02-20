@@ -73,6 +73,7 @@
 大掛かりなシステム開発を行わず、操作感はそのままに&lt;strong&gt;初期費用20万円・維持費0円&lt;/strong&gt;で「絶対に壊れないリアルタイム・ダッシュボード」を構築した事例をご紹介します。&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://nexa-eng.com/services/case01/case01.png" alt="alt"&gt;&lt;/p&gt;
 &lt;h2 id="1-現場のリアルな困りごとbefore"&gt;1. 現場のリアルな困りごと（Before）&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://nexa-eng.com/services/case01/issues.png" alt="alt"&gt;&lt;/p&gt;
 &lt;p&gt;あるお客様の現場では、原価や売掛買掛データを共有サーバ上の重たいExcelファイルで管理していました。そして以下のような課題に直面していました。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;「同時アクセスできない（順番待ちの発生）」&lt;/strong&gt;&lt;br&gt;
@@ -83,12 +84,14 @@
 複数人で運用していた結果、誤って数式や行を消してしまう事故が定期的に発生。会議のたびに特定の手慣れた担当者がピボットテーブルやグラフを作り直す必要があり、多大な労力がかかっていました。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="2-nexa-engineeringの提案作らない開発で解決する"&gt;2. Nexa Engineeringの提案：「作らない開発」で解決する&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://nexa-eng.com/services/case01/dev.png" alt="alt"&gt;&lt;/p&gt;
 &lt;p&gt;Nexa Engineeringが提案したのは、高額な専用システムを作ることや、高いライセンス料を払い続けることではありませんでした。既存の無料ツールを賢く組み合わせる &lt;strong&gt;「作らない開発」&lt;/strong&gt; です。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;① ライセンス費不要の「Googleスプレッドシート」へ移行&lt;/strong&gt;&lt;br&gt;
 共有サーバのExcelをやめ、無料で同時編集が可能なGoogleスプレッドシートへデータを移行しました。 &lt;strong&gt;シートの操作感や関数はこれまでのExcelとほぼ同じ&lt;/strong&gt; ため、現場が戸惑うことなく（再学習コストゼロで）スムーズに移行完了。もちろん、今後の追加ライセンス費用もかかりません。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;② 「入力」と「閲覧」の完全分離（Looker Studioの導入）&lt;/strong&gt;&lt;br&gt;
 さらにここが最大のポイントです。集計やグラフ化をスプレッドシート上で行うのではなく、無料のBIツールである &lt;strong&gt;「Looker Studio」&lt;/strong&gt; を連携させ、ダッシュボード化しました。&lt;/p&gt;
 &lt;h2 id="3-導入効果解決したらこんなに簡単になったafter"&gt;3. 導入効果：解決したら、こんなに簡単になった！（After）&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://nexa-eng.com/services/case01/benefit.png" alt="alt"&gt;&lt;/p&gt;
 &lt;p&gt;システムを導入した結果、現場から &lt;strong&gt;「圧倒的に楽になった！」「もう元のExcelには戻れない」&lt;/strong&gt; という声をいただきました。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;💡 &lt;strong&gt;サクサク動く！同時編集のストレスがゼロに&lt;/strong&gt; ：全員が同時にシートを開いて入力できるため、月末の業務集中時の「待ち時間」が消滅しました。&lt;/li&gt;
