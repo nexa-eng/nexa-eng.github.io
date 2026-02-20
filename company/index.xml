@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>企業情報 on Nexa Engineering</title><link>https://nexa-eng.com/company/</link><description>Recent content in 企業情報 on Nexa Engineering</description><generator>Hugo -- gohugo.io</generator><language>ja</language><atom:link href="https://nexa-eng.com/company/index.xml" rel="self" type="application/rss+xml"/><item><title>代表取締役</title><link>https://nexa-eng.com/company/ceo/</link><pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate><guid>https://nexa-eng.com/company/ceo/</guid><description>&lt;h2 id="代表メッセージ"&gt;代表メッセージ&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;「育てていただいた現場へ技術で恩返しを。」&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;私のエンジニアとしての原点は、15年間を過ごした製造現場にあります。
-日本、そして米国の工場で多くの仲間と汗を流し、学んだことは &lt;strong&gt;技術は現場で働く人の『想い』と噛み合った時、初めて輝く&lt;/strong&gt; ということです。&lt;/p&gt;
-&lt;p&gt;だからこそ、私は「外部の業者」ではなく、 &lt;strong&gt;現場に潜り込む専属エンジニア&lt;/strong&gt; としての在り方にこだわります。
-会議室で仕様を決めるのではなく、現場で困りごとを肌で感じ、本当に必要な「小さな仕組み」を素早く作る。
-「作業が楽になった」「早く帰れるようになった」——現場の方からいただくその言葉こそが、私にとって最高の報酬です。&lt;/p&gt;
-&lt;p&gt;最先端の研究で得た知見も、現場で培った経験も、すべてはご縁をいただいた皆様のビジネスを支えるために。
-技術の力で、貴社の現場に「笑顔」と「余裕」をお届けします。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;『営業＝開発者』×『最新技術』。この2つが圧倒的なスピードと納得のコスト感を実現します。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;システム導入において、最も大きなコスト要因は「エンジニアの単価」ではありません。&lt;br&gt;
+それは「伝言ゲーム」による意思決定の遅さと、多重請負構造による「過剰な開発（オーバーエンジニアリング）」にあります。&lt;/p&gt;
+&lt;p&gt;Nexa Engineeringは、この構造を根本から変えます。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. 「ご相談を受ける私」が「開発する私」です。&lt;/strong&gt;&lt;br&gt;
+間に誰も挟まないからこそ、お客様の課題をダイレクトに理解し、その場で技術的な判断が下せます。「持ち帰って検討します」というタイムラグはありません。&lt;br&gt;
+細かいすり合わせや仕様書の作り込みも不要で、初期段階からプロトタイプをベースに検討ができるので「こんなはずじゃなかった」を減らせます。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. 最新技術による「作らない開発」を徹底します。&lt;/strong&gt;&lt;br&gt;
+生成AIやクラウド、ローコードツールを駆使し、開発工数そのものを劇的に圧縮します。&lt;br&gt;
+従来なら数ヶ月かかった機能を、数日・数万円単位で実装できるのは、最新技術があるからこそです。&lt;br&gt;
+組織の管理コストも存在しないため、頂いた費用のすべてを純粋な技術価値として還元します。&lt;/p&gt;
+&lt;p&gt;コストを極限まで圧縮する例として、このホームページも最小限の機能と安価な技術活用（Hugo＋GitHub Pages）により、&lt;strong&gt;劇的な開発工数削減と初年度維持費1円（ドメインキャンペーン、サーバ無料）&lt;/strong&gt; を実現しています。&lt;/p&gt;
+&lt;p&gt;15年間の製造現場で培った &lt;strong&gt;「ムダ取り」&lt;/strong&gt; の精神をシステム開発にも。&lt;br&gt;
+大手には真似できない機動力と技術選定で、貴社のビジネスを最短距離で加速させます。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;代表取締役　市原 健太郎&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id="プロフィール"&gt;プロフィール&lt;/h2&gt;
 &lt;ul&gt;
@@ -20,7 +26,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;パナソニック株式会社（国内）&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;電池製造プロセスのエンジニアとして、設備制御や新工場の立ち上げに従事。&lt;/li&gt;
-&lt;li&gt;「1級電気機器組立て技能士」や「品質管理検定2級」を取得。設備と対話し、現場の品質を守り抜く「日本のものづくり」の精神を叩き込まれました。&lt;/li&gt;
+&lt;li&gt;「1級電気機器組立て技能士」や「品質管理検定2級」を取得。設備と対話し現場の品質を守り抜く「日本のものづくり」の精神を叩き込まれました。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Phase 2：世界への挑戦（2017 - 2022）&lt;/strong&gt;&lt;/p&gt;
@@ -30,11 +36,11 @@
 &lt;li&gt;広大な北米工場で、多様なチームと共に開発を推進。人種や文化を超え、一つの目標に向かって技術で貢献する喜びを肌で感じた5年間でした。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Phase 3：現場への還流（2023 - 現在）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Phase 3：現場への還流（2025 - 現在）&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Nexa Engineering株式会社 設立&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;「もっと身近な場所で、技術の恩恵を届けたい」という想いから2025年に退社し独立。&lt;/li&gt;
-&lt;li&gt;現在は、先端研究開発に携わる一方、企業の「専属エンジニア」として活動。 &lt;strong&gt;「商談録音分析AI」「経営・経理ダッシュボード」などの機能&lt;/strong&gt;を短期間でリリース。スピード感を持って「現場に馴染むオートメーション」を実現しています。&lt;/li&gt;
+&lt;li&gt;「もっと身近な場所で、技術の恩恵を届けたい」という想いから2025年に独立。&lt;/li&gt;
+&lt;li&gt;現在は、先端研究開発に携わる一方、企業の「専属エンジニア」として活動。&lt;strong&gt;「営業支援AI」「経営・経理ダッシュボード」などの機能&lt;/strong&gt;を手頃な価格で提供。スピード感を持って「現場に馴染むオートメーション」を実現しています。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="スキル"&gt;スキル&lt;/h2&gt;
 &lt;ul&gt;
@@ -42,7 +48,6 @@
 &lt;li&gt;&lt;strong&gt;Automation &amp;amp; Visualization:&lt;/strong&gt; n8n, LookerStudio&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Personal Lab（趣味の開発）:&lt;/strong&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;「ちょうど良いものが無いなら自分で作る」&lt;/strong&gt; がモットー。&lt;/li&gt;
 &lt;li&gt;子供のための植物観察IoT、上場企業決算分析AI、秘書AIなどを趣味で開発。技術を使って身近な人を喜ばせることがライフワークです。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
