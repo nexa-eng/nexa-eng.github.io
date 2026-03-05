@@ -117,7 +117,8 @@ MCPサーバ構築にはクラウドインフラ（AWS等）、コンテナ（Do
 &lt;strong&gt;「誰かが数式を消してしまい、集計が合わなくなった…」&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;そんな「Excel管理の限界」を感じていませんか？
 大掛かりなシステム開発を行わず、操作感はそのままに&lt;strong&gt;初期費用20万円・維持費0円&lt;/strong&gt;で「絶対に壊れないリアルタイム・ダッシュボード」を構築した事例をご紹介します。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://nexa-eng.com/services/case01/case01.png" alt="alt"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;開発画面イメージ&lt;/strong&gt;&lt;br&gt;
+&lt;img src="https://nexa-eng.com/services/case01/sample.png" alt="alt"&gt;&lt;/p&gt;
 &lt;h2 id="1-現場のリアルな困りごとbefore"&gt;1. 現場のリアルな困りごと（Before）&lt;/h2&gt;
 &lt;p&gt;&lt;img src="https://nexa-eng.com/services/case01/issues.png" alt="alt"&gt;&lt;/p&gt;
 &lt;p&gt;あるお客様の現場では、原価や売掛買掛データを共有サーバ上の重たいExcelファイルで管理していました。そして以下のような課題に直面していました。&lt;/p&gt;
