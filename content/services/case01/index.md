@@ -4,10 +4,10 @@ date: 2026-02-17
 hero: hero-case01.png
 menu:
   sidebar:
-    name: 導入事例1
+    name: 事例1：脱・壊れるExcel
     identifier: case01
     parent: services
-    weight: 20
+    weight: 21
 ---
 
 ## 維持費ゼロで実現する、現場主導のデータ見える化
