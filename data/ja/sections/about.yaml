@@ -8,42 +8,22 @@ section:
   template: sections/about.html
 
 # your designation
-designation: 現場に潜り課題に挑む貴社「専属エンジニア」という頼り方
-# your company information
-#company:
-#  name: Nexa Engineering
-#  url: "https://nexa-eng.com/"
-
-# your resume. this file path should be relative to you "static" directory
-# Dreprecated. Use resourceLinks instead.
-# resume: "files/resume.pdf"
+designation: 経営者×コンサル×エンジニア。現場の情報で経営改善を実現する「専属エンジニア」
 
 # a summary about you
 summary: >
-  末端センサーの情報収集から最新AIの構築まで。大手には真似できない機動力と一気通貫の技術力で、貴社の課題に共に挑みます。<br><br>
+  <b>1. 経営者視点で、本当に必要な数字を設計する：</b>
+  自社経営の実践から「経営者が見るべきKPIは何か」を理解しています。
+  その視点でダッシュボードを設計するため、経営判断に直結した可視化を実現します。<br>
+  <b>2. 現場に潜り、課題を一気通貫で解決する：</b>
+  業務フロー・顧客データ・売上情報を現場から収集し、最新技術で整理・可視化。
+  課題の特定から実装・成果確認まで、専属エンジニアとして責任を持って完遂します。<br>
+  <b>3. 過剰開発を排除し、最新技術を驚くほど安価に届ける：</b>
+  15年間の製造現場で培った 「ムダ取り」 の精神をシステム開発にも。間に誰も挟まないからこそ、お客様の課題をダイレクトに理解し、過剰な機能を排除した最小限の仕組みを驚くほど短期間で安価に提供します。
 
-  <b>1. 現場に馴染むオートメーション：</b> 単なるツールの提供に留まらず、課題の特定から効果算出、プロトタイプ開発まで、専属エンジニアとして責任を持って完遂します。<br>
-  <b>2. 経営を支えるデータ可視化：</b> 現場の末端センサーからクラウドまで、あらゆる情報を一気通貫で統合。データに基づいた経営判断のお手伝いをします。<br>
-  <b>3. 無駄のない小さな開発：</b> 過剰な開発（オーバーエンジニアリング）を排除し、現場のやり方に寄り添った「本当に役立つ」仕組みを迅速に形にします。
-# give as many as you want. use font-awesome for the icons.
-socialLinks:
-- name: Email
-  icon: "fas fa-envelope"
-  url: "contact@nexa-eng.com"
-
-- name: Github
-  icon: "fab fa-github"
-  url: "https://www.github.com/nexa-eng"
-
-- name: Twitter
-  icon: "fab fa-twitter"
-  url: "#"
 
 # You can put custom buttons to link your relevant resources.
 # For example, you can put link for your resume.
-resourceLinks:
-- title: "Under Construction"
-  url: "#"
 
 # Show your badges
 # You can show your verifiable certificates from https://www.credly.com.
