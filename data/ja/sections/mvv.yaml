@@ -1,0 +1,70 @@
+section:
+  name: 経営理念
+  id: mvv
+  enable: true
+  weight: 20
+  showOnNavbar: true
+  template: sections/mvv.html
+
+mission:
+  label: Mission（使命）
+  tagline: なぜ存在するか
+  body: 最新技術を誰もが手の届く形で地域に届け、技術格差のない経営改善を当たり前にする。
+
+vision:
+  label: Vision（ビジョン）
+  tagline: 目指す世界
+  body: 経営者が技術格差を意識することなく本業に集中でき、その成果が地域全体の活力となる世界を実現する。
+
+wills:
+- number: 1
+  name: 簡潔迅達
+  description: 過剰を作らず、現場に合った最小限の仕組みを素早く届ける
+- number: 2
+  name: 公正誠実
+  description: 成果も課題も正直に伝え、誠心誠意取り組む
+- number: 3
+  name: 和心協創
+  description: 顧客・パートナーと和の精神で協力し、共に価値を創る
+- number: 4
+  name: 謙虚向上
+  description: 驕らず学び続け、変化に柔軟に適応する
+- number: 5
+  name: 感謝報恩
+  description: すべての縁と支援に感謝し、恩を行動で返す
+
+principles:
+  label: 経営三原則
+  tagline: Mission・Vision・Willの根拠となる不変の制約
+  items:
+  - number: 1
+    name: 過剰開発を避ける
+    description: 現場に合った最小限の仕組みを素早く形にする
+  - number: 2
+    name: 専属エンジニアモデル
+    description: 現場に潜り、課題を一気通貫で解決する
+  - number: 3
+    name: 松下幸之助の経営哲学を根本規範とする
+    description: 綱領・信条・遵奉すべき7精神を経営判断の基軸とする
+
+matsushita:
+  label: 松下幸之助 綱領・信条・七精神
+  items:
+  - category: 綱領
+    content: 産業人として社会生活の改善と向上を図り、世界文化の発展に寄与する
+  - category: 信条
+    content: 和親協力のもと各員が力を発揮し、誠心誠意企業活動に努め社会へ貢献する
+  - category: "七精神①：産業報国"
+    content: 事業を通じて社会・地域に貢献する
+  - category: "七精神②：公明正大"
+    content: 常に公正・誠実に行動する
+  - category: "七精神③：和親一致"
+    content: 顧客・パートナーと和の精神で協力する
+  - category: "七精神④：力闘向上"
+    content: 絶えず改善・成長を追求する
+  - category: "七精神⑤：礼節謙譲"
+    content: 礼節を尽くし、驕らず謙虚であり続ける
+  - category: "七精神⑥：順応同化"
+    content: 環境・時代の変化に柔軟に適応する
+  - category: "七精神⑦：感謝報恩"
+    content: すべての縁と支援に感謝し、恩を行動で返す
