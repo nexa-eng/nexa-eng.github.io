@@ -9,27 +9,24 @@ section:
 mission:
   label: Mission（使命）
   tagline: なぜ存在するか
-  body: 最新技術を誰もが手の届く形で地域に届け、技術格差のない経営改善を当たり前にする。
+  body: 現場に潜り、過剰を排し、最短で経営課題を解決することで、産業の発展に寄与する。
 
 vision:
   label: Vision（ビジョン）
   tagline: 目指す世界
-  body: 経営者が技術格差を意識することなく本業に集中でき、その成果が地域全体の活力となる世界を実現する。
+  body: 地域の経営者が技術の壁を超え、本業の価値創造に集中できる世界をつくる。そのために、過剰を排したコスト構造で最新技術を圧倒的に安価に届け続ける。
 
 wills:
 - number: 1
   name: 簡潔迅達
-  description: 過剰を作らず、現場に合った最小限の仕組みを素早く届ける
+  description: 過剰を作らず、現場に合った最小限の仕組みを素早く・驚くほど安価に届ける
 - number: 2
-  name: 公正誠実
-  description: 成果も課題も正直に伝え、誠心誠意取り組む
-- number: 3
   name: 和心協創
   description: 顧客・パートナーと和の精神で協力し、共に価値を創る
-- number: 4
+- number: 3
   name: 謙虚向上
   description: 驕らず学び続け、変化に柔軟に適応する
-- number: 5
+- number: 4
   name: 感謝報恩
   description: すべての縁と支援に感謝し、恩を行動で返す
 
