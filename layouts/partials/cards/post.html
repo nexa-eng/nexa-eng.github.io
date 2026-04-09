@@ -1,12 +1,18 @@
+{{ $link := .RelPermalink | relLangURL }}
+{{ $target := "" }}
+{{ with .Params.externalUrl }}
+  {{ $link = . }}
+  {{ $target = "_blank" }}
+{{ end }}
 <div class="post-card">
   <div class="card">
     <div class="card-head">
-      <a href="{{ .RelPermalink | relLangURL }}" class="post-card-link">
+      <a href="{{ $link }}" {{ with $target }}target="{{ . }}" rel="noopener noreferrer"{{ end }} class="post-card-link">
         <img class="card-img-top" src='{{ partial "helpers/get-hero.html" . }}' alt="Hero Image">
       </a>
     </div>
     <div class="card-body">
-      <a href="{{ .RelPermalink | relLangURL }}" class="post-card-link">
+      <a href="{{ $link }}" {{ with $target }}target="{{ . }}" rel="noopener noreferrer"{{ end }} class="post-card-link">
         <h5 class="card-title">{{ .Title }}</h5>
         <p class="card-text post-summary">{{ .Summary | plainify }}</p>
       </a>
@@ -19,7 +25,7 @@
           {{ .Date | time.Format ":date_full" }}
           {{ if site.Params.features.readingTime }} | {{.ReadingTime}} {{ i18n "minute" .ReadingTime }} {{ end }}</span>
       <a
-      href="{{ .RelPermalink | relLangURL }}"
+      href="{{ $link }}" {{ with $target }}target="{{ . }}" rel="noopener noreferrer"{{ end }}
       class="float-end btn btn-outline-info btn-sm">{{ i18n "read" }}</a>
     </div>
   </div>
