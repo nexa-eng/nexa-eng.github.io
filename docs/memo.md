@@ -24,41 +24,19 @@
   - Aboutに見出し追加
   - Experienceの年月がサファリだと電話番号と認識されるため、Month yyyyに変更
 
-## ブログ
+## コマンド
 
-- posts構造を整理。全部Sampleにまとめ。
+HTMLを出力。GitHubで公開するなら不要
+hugo --minify
 
-構成案
+HUGOサーバーを立ち上げ。通常はこれで修正を確認する。
+hugo server -D
 
-1. Hugoの基本
-  01.md: Hugo入門: 静的サイトジェネレーターの魅力 (hugo-introduction)
-  02.md: Hugo インストール手順（Windows向け） (hugo-install-windows)
-  03.md: Hugo インストール手順（Macintosh向け） (hugo-install-mac)
-  04.md: Hugo サイト作成手順とフォルダ構成の概要 (hugo-site-setup)
+新しくポストを作成する場合
+hugo new posts/new-post.md
 
-2. コンテンツ管理
-  05.md: Hugo テーマの導入と設定方法 (hugo-theme-setup)
-  06.md: Hugo のコンテンツ管理とカスタムリストページの作成 (hugo-content-management)
-  07.md: Hugo のフロントマターの概要と活用方法 (hugo-front-matter)
-  08.md: Hugo のアーキタイプの概要と活用方法 (hugo-archetypes)
+## 見た目を変える
 
-3. テンプレートとレイアウト
-  09.md: Hugo テンプレートの基本 (hugo-templates-basics)
-  10.md: タクソノミーの活用方法 (hugo-taxonomies)
-  11.md: テンプレートの基本と活用方法 (hugo-templates-usage)
-  12.md: リストテンプレートの活用方法 (hugo-list-templates)
-  13.md: シングルテンプレートの活用方法 (hugo-single-templates)
-  14.md: ホームページテンプレートの作成と活用方法 (hugo-homepage-templates)
-  15.md: セクションテンプレートの活用方法 (hugo-section-templates)
-  16.md: Baseテンプレートとブロックの活用方法 (hugo-base-block-templates)
-
-4. 高度な機能
-  17.md: 変数の基本と活用方法 (hugo-variables)
-  18.md: 条件ロジックの活用方法 (hugo-conditional-logic)
-  19.md: 条件分岐の基本と活用方法 (hugo-conditional-branches)
-  20.md: データフォルダの活用方法 (hugo-data-folder)
-  21.md: パーシャルテンプレートの活用方法 (hugo-partial-templates)
-  22.md: ショートコードテンプレートの活用方法 (hugo-shortcodes)
-
-5. デプロイと最適化
-  23.md: サイトのビルドとホスティング方法 (hugo-deploy-hosting)
+- 文章等はdataフォルダの中身を修正
+- そもそもの見た目をいじるならlayouts/partials/sectionsのHTMLを直接いじる
+- 言語間で対応ワードの差異がたまにある

@@ -1,7 +1,7 @@
 baseURL: https://nexa-eng.com
 
-languageCode: en
-title: "Nexa Engineering"
+languageCode: ja
+title: "Nexa Engineering株式会社"
 
 # Use Hugo modules to add theme
 module:
@@ -20,9 +20,15 @@ module:
 # Manage languages
 # For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
 languages:
-  en:
-    languageCode: en
-    languageName: English
+#  en:
+#    languageCode: en
+#    languageName: English
+#    title: "Nexa Engineering Co., Ltd."
+#    weight: 2
+# 追加: 日本語設定
+  ja:
+    languageCode: ja
+    languageName: 日本語
     title: "Nexa Engineering"
     weight: 1
 #  bn:
@@ -31,7 +37,7 @@ languages:
 #    title: জনের ব্লগ
 #    weight: 2
 # default language for the content
-defaultContentLanguage: en
+defaultContentLanguage: ja
 
 
 # Allow raw html in markdown file
@@ -58,7 +64,7 @@ enableEmoji: true
 # Site parameters
 params:
   # Background image of the landing page
-  background: /images/site/background.jpg
+  background: /images/site/20151004133605-a8b28334-me.jpg
   # Background image of the landing page for dark theme
   #darkBackground: /images/site/background.jpg
 
@@ -70,7 +76,7 @@ params:
     favicon: /images/site/favicon.png
 
   # GitHub repo of your site
-  gitRepo: https://github.com/ichiken-usa/ichiken-usa.github.io
+  gitRepo: https://github.com/nexa-eng/nexa-eng.github.io
   # Default branch of your Git repo
   gitBranch: main
 
@@ -100,8 +106,8 @@ params:
 
     # Enable and configure blog posts
     blog:
-      enable: true
-      showAuthor: true # shows the author of post (defaults true)
+      enable: false
+      showAuthor: false # shows the author of post (defaults true)
       # Share post on different social media
       shareButtons:
         facebook: true
@@ -117,7 +123,7 @@ params:
 
     # Enable & configure "Notes" features
     notes:
-      enable: true
+      enable: false
 
     # Enable comment feature. There, should be only one of them.
     comment:
@@ -306,4 +312,4 @@ params:
 
     # Show/hide disclaimer notice in the footer. Default is "false".
     disclaimer:
-      enable: true
+      enable: false

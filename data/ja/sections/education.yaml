@@ -1,0 +1,30 @@
+# section information
+section:
+  name: Education
+  id: education
+  template: sections/education.html # Use "sections/education-alt.html for alternate template.
+  enable: false
+  weight: 31
+  showOnNavbar: false
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+degrees:
+- name: MEng Information Technology
+  icon: fa-graduation-cap
+  timeframe: 2007-2010
+  institution:
+    name: Shinshu University
+    url: "https://www.shinshu-u.ac.jp/english/"
+    logo: /images/sections/education/shinshu-university.png
+    # Can optionally show a different logo for dark theme
+    # darkLogo: /images/sections/education/tech_college.png
+#  grade: #(optional)
+#    scale: CGPA
+#    achieved: 3.6
+#    outOf: 4
+  publications: #(optional)
+  - title: Detection of floating pollen by laser-induced fluorescence spectrum (LIFS) LiDAR Ⅱ
+    url: ""
+  - title: Detection of floating pollen by laser-induced fluorescence spectrum (LIFS) LiDAR
+    url: "https://laser-sensing.jp/26thLSS/26th_papers/P30_ichihara.pdf"

@@ -1,8 +1,6 @@
 ---
 title: Privacy Policy
-date: 2025-05-01
-authors:
-  - admin
+date: 2025-09-12
 ---
 
 This website ("the Site") respects the privacy of its visitors and is committed to protecting personal information. This Privacy Policy explains how personal information is handled on the Site.  
@@ -47,8 +45,8 @@ This Privacy Policy may be updated as necessary. The updated policy will take ef
 
 For inquiries regarding this Privacy Policy, please contact us at the following email address:
 
-- Email: [kentaro.ichihara.bz@gmail.com](mailto:kentaro.ichihara.bz@gmail.com)
+- Email: [contact@nexa-eng.com](mailto:contact@nexa-eng.com)
 
 ---
 
-This Privacy Policy is effective as of May 1, 2025.
+This Privacy Policy is effective as of Sep 12, 2025.

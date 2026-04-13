@@ -1,0 +1,62 @@
+# section information
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 10
+  showOnNavbar: true
+  template: sections/about.html
+
+# your designation
+designation: 現場に潜り、過剰を排し、経営を変える。貴社の専属エンジニア。
+
+# a summary about you
+summary: >
+  <b>1. 過剰開発を排除し、最新技術を驚くほど安価に届ける：</b>
+  15年間の製造現場で培った 「ムダ取り」 の精神をシステム開発にも。間に誰も挟まないからこそ、お客様の課題をダイレクトに理解し、過剰な機能を排除した最小限の仕組みを驚くほど短期間で安価に提供します。<br>
+  <b>2. 現場に潜り、課題を一気通貫で解決する：</b>
+  「何を頼めばいいかわからない」でも大丈夫。専属エンジニアとして現場に入り込み、業務フロー・顧客データ・売上情報を収集しながら一緒に課題を整理します。
+  課題の特定から実装・成果確認まで、責任を持って完遂します。<br>
+  <b>3. 経営者視点で、本当に必要な数字を設計する：</b>
+  自社経営の実践から「経営者が見るべきKPIは何か」を理解しています。
+  その視点でダッシュボードを設計するため、経営判断に直結した可視化を実現します。
+
+
+# You can put custom buttons to link your relevant resources.
+# For example, you can put link for your resume.
+
+# Show your badges
+# You can show your verifiable certificates from https://www.credly.com.
+# You can also show a circular bar indicating the level of expertise on a certain skill
+#badges:
+#- type: soft-skill-indicator
+#  name: Japanese
+#  percentage: 100
+#  color: blue
+
+#- type: soft-skill-indicator
+#  name: English
+#  percentage: 50
+#  color: green
+
+#- type: soft-skill-indicator
+#  name: Chines
+#  percentage: 10
+#  color: orange
+
+#- type: certification
+#  name: AWS Certified Cloud Practitioner
+#  url: "https://www.credly.com/badges/4bd00f45-afdb-4ebe-9480-b19c38d1b9c6"
+#  badge: "https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png"
+
+#- type: certification
+#  name: First-Class Electric Equipment Assembly Engineer
+#  url: "https://waza.mhlw.go.jp/kenteiseido/"
+#  badge: "https://waza.mhlw.go.jp/logo/images/img-logomark.jpg"
+
+
+# you can also provide color code instead of the color name
+# - type: soft-skill-indicator
+#   name: Example 1
+#   percentage: 75
+#   color: "#00adb5"

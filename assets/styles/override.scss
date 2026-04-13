@@ -4,9 +4,9 @@
     --secondary-color: #ddfff5;
     --text-color-light: #fff;
     --border-color: #ddd;
-    --heading-font-size-large: 2.5rem;
-    --heading-font-size-medium: 2rem;
-    --heading-font-size-small: 1.75rem;
+    --heading-font-size-large: 2rem;
+    --heading-font-size-medium: 1.6rem;
+    --heading-font-size-small: 1.5rem;
 }
 
 p {
@@ -30,7 +30,8 @@ h1,
 h2,
 h3 {
     font-weight: bold;
-    margin: 2rem 0; /* 上下に余白を追加 */
+    margin-top: 3rem !important;
+    margin-bottom: 1rem;
     line-height: 2;
 }
 
@@ -53,22 +54,37 @@ h2 {
     border-left: solid 15px var(--primary-color);
     border-bottom: solid 2px var(--primary-color);
     color: var(--text-color-light) !important;
-    padding: 1rem 2rem !important;
+    padding: 1rem 1rem !important;
     text-align: left;
 }
 
 /* h3スタイル */
 h3 {
     font-size: var(--heading-font-size-small);
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 1rem !important; /* 左側の余白を1.5rem→2.5remに拡大 */
     background: transparent;
-    border-left: solid 10px var(--primary-color);
+    border-left: solid 8px var(--primary-color);
+}
+
+/* h4スタイル */
+h4 {
+    font-size: 1.3rem; /* h3(1.5rem)より少し小さく */
+    font-weight: bold;
+    margin-top: 2rem;  /* 上の余白 */
+    margin-bottom: 0.8rem; /* 下の余白 */
+    padding-left: 0.8rem; /* 文字と線の間隔 */
+    border-left: solid 4px var(--primary-color); /* h3(8px)の半分の太さで階層を表現 */
+    color: #333; /* 文字色は本文に合わせる（または濃いグレー） */
+    line-height: 1.6;
 }
 
 /* 画像スタイル */
 img {
     max-width: 100%;
     max-height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* 水平線スタイル */
@@ -90,6 +106,8 @@ hr {
 /* テーブルスタイル */
 table {
     border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 table th,
