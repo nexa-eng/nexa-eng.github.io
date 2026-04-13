@@ -1,84 +1,128 @@
-/* カラーコードを変数化 */
+/* ==========================================================================
+   Nexa Engineering - Article Page Styles (Modernized)
+   Primary color: #009988
+   ========================================================================== */
+
+/* --- Design Tokens --- */
 :root {
     --primary-color: #009988;
+    --primary-light: rgba(0, 153, 136, 0.06);
+    --primary-lighter: rgba(0, 153, 136, 0.03);
+    --primary-medium: rgba(0, 153, 136, 0.08);
     --secondary-color: #ddfff5;
     --text-color-light: #fff;
     --border-color: #ddd;
-    --heading-font-size-large: 2rem;
-    --heading-font-size-medium: 1.6rem;
-    --heading-font-size-small: 1.5rem;
+    --heading-font-size-large: clamp(1.75rem, 1.5rem + 1.5vw, 2.5rem);
+    --heading-font-size-medium: 1.5rem;
+    --heading-font-size-small: 1.25rem;
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.08);
+    --gradient-accent: linear-gradient(135deg, #009988, #00bfa6);
 }
 
+/* --- Typography: Paragraphs --- */
 p {
-    margin: 1.5rem 0; /* 段落ごとの上下の間隔を広げる */
-    line-height: 1.8; /* 行間を調整 */
+    margin: 1.5rem 0;
+    line-height: 1.8;
 }
 
-/* 箇条書きの間隔を調整 */
+/* --- Typography: Lists --- */
 ul, ol {
-    margin: 1rem 0; /* 箇条書き全体の上下の余白 */
-    padding-left: 2rem; /* 箇条書きの左側のインデント */
+    margin: 1rem 0;
+    padding-left: 2rem;
 }
 
 li {
-    margin-bottom: 0.5rem; /* 各リスト項目の間隔 */
-    line-height: 1.6; /* 行間を調整 */
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
 }
 
-/* 共通スタイル */
-h1,
-h2,
-h3 {
+/* --- Typography: Headings (shared) --- */
+h1, h2, h3 {
     font-weight: bold;
     margin-top: 3rem !important;
     margin-bottom: 1rem;
-    line-height: 2;
+    line-height: 1.6;
 }
 
-/* h1スタイル */
+/* --- h1: Article Title --- */
 h1 {
     font-size: var(--heading-font-size-large);
     color: var(--primary-color);
-    /*border-bottom: 3px solid var(--primary-color);*/
     padding-bottom: 0.5rem;
     text-align: center;
     display: block;
     width: 85%;
     margin: 2rem auto;
+    position: relative;
 }
 
-/* h2スタイル */
+/* Gradient underline accent */
+h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--gradient-accent);
+    border-radius: 2px;
+    margin: 0.75rem auto 0;
+}
+
+/* --- h2: Section Heading (modernized from heavy border to light card) --- */
 h2 {
     font-size: var(--heading-font-size-medium);
-    /*background: var(--secondary-color);*/
-    border-left: solid 15px var(--primary-color);
-    border-bottom: solid 2px var(--primary-color);
-    color: var(--text-color-light) !important;
-    padding: 1rem 1rem !important;
+    border-left: 4px solid var(--primary-color);
+    border-bottom: none;
+    background: var(--primary-light);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    padding: 0.8rem 1.2rem !important;
     text-align: left;
+    transition: background 0.2s ease;
 }
 
-/* h3スタイル */
+/* --- h3: Sub-section Heading --- */
 h3 {
     font-size: var(--heading-font-size-small);
-    padding: 0.5rem 1rem !important; /* 左側の余白を1.5rem→2.5remに拡大 */
+    padding: 0.5rem 1rem !important;
     background: transparent;
-    border-left: solid 8px var(--primary-color);
+    border-left: 3px solid var(--primary-color);
 }
 
-/* h4スタイル */
+/* --- h4: Minor Heading --- */
 h4 {
-    font-size: 1.3rem; /* h3(1.5rem)より少し小さく */
-    font-weight: bold;
-    margin-top: 2rem;  /* 上の余白 */
-    margin-bottom: 0.8rem; /* 下の余白 */
-    padding-left: 0.8rem; /* 文字と線の間隔 */
-    border-left: solid 4px var(--primary-color); /* h3(8px)の半分の太さで階層を表現 */
-    color: #333; /* 文字色は本文に合わせる（または濃いグレー） */
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    padding-left: 0;
+    border-left: none;
+    color: var(--primary-color);
     line-height: 1.6;
 }
 
-/* 画像スタイル */
+/* --- Scroll margin for TOC links --- */
+h2, h3, h4 {
+    scroll-margin-top: 5rem;
+}
+
+/* --- Images: Rounded with shadow --- */
+.post-content img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 2rem auto;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    transition: box-shadow 0.3s ease;
+}
+
+.post-content img:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* Non-post images keep simple style */
 img {
     max-width: 100%;
     max-height: 100%;
@@ -87,14 +131,14 @@ img {
     margin-right: auto;
 }
 
-/* 水平線スタイル */
+/* --- Horizontal Rules --- */
 hr {
     border: 0;
     height: 2px;
     border-bottom: 2px solid;
 }
 
-/* テキスト装飾 */
+/* --- Text Utilities --- */
 .bold {
     font-weight: bold;
 }
@@ -103,24 +147,46 @@ hr {
     font-style: italic;
 }
 
-/* テーブルスタイル */
+/* --- Tables: Modern rounded with subtle header --- */
 table {
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 1.5rem auto;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+    width: auto;
+    max-width: 100%;
 }
 
 table th,
 table td {
     border: solid 1px var(--border-color);
+    padding: 0.75rem 1rem;
 }
 
 table th {
-    background-color: var(--primary-color);
-    color: var(--text-color-light) !important;
+    background-color: var(--primary-medium);
+    color: var(--primary-color);
+    font-weight: 600;
 }
 
-/* テキスト位置 */
+table tr:nth-child(even) td {
+    background-color: var(--primary-lighter);
+}
+
+/* Remove double borders from rounded table */
+table th + th,
+table td + td {
+    border-left: solid 1px var(--border-color);
+}
+
+table tr + tr td,
+table tr + tr th {
+    border-top: solid 1px var(--border-color);
+}
+
+/* --- Text Alignment Utilities --- */
 .right {
     text-align: right;
 }
@@ -133,18 +199,137 @@ table th {
     text-align: left;
 }
 
-/* Experienceセクションの表示調整 */
+/* --- Post Content: Readable width --- */
+.post-content {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+/* Tables can break out of max-width */
+.post-content table {
+    max-width: none;
+}
+
+/* --- Links in articles (exclude heading anchors) --- */
+.post-content a:not(h1 a):not(h2 a):not(h3 a):not(h4 a):not(h5 a):not(h6 a) {
+    color: var(--primary-color);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: rgba(0, 153, 136, 0.3);
+    transition: text-decoration-color 0.2s ease, color 0.2s ease;
+}
+
+.post-content a:not(h1 a):not(h2 a):not(h3 a):not(h4 a):not(h5 a):not(h6 a):hover {
+    text-decoration-color: var(--primary-color);
+}
+
+/* Heading anchors: no underline */
+.post-content h1 a,
+.post-content h2 a,
+.post-content h3 a,
+.post-content h4 a,
+.post-content h5 a,
+.post-content h6 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* CTA button-style links (links to /contact/) */
+.post-content a[href*="/contact/"],
+.post-content a[href*="/contact"] {
+    display: inline-block;
+    padding: 0.6rem 1.8rem;
+    background: var(--gradient-accent);
+    color: #fff !important;
+    text-decoration: none !important;
+    border-radius: 6px;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 2px 12px rgba(0, 153, 136, 0.25);
+}
+
+.post-content a[href*="/contact/"]:hover,
+.post-content a[href*="/contact"]:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(0, 153, 136, 0.35);
+}
+
+/* --- List marker color --- */
+.post-content ul li::marker {
+    color: var(--primary-color);
+}
+
+.post-content ol li::marker {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* --- Image reveal animation (respects reduced motion) --- */
+@media (prefers-reduced-motion: no-preference) {
+    .post-content img {
+        animation: fadeInUp 0.5s ease both;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0.6;
+            transform: translateY(8px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+/* --- Experience Section (unchanged) --- */
 .experience-entry-heading {
-    margin-bottom: 2rem; /* 会社間の余白を追加 */
+    margin-bottom: 2rem;
 }
 
 .company-heading + h6.text-heading {
-    margin-top: 1.5rem; /* ポジション名とResponsibilitiesの間の余白を広げる */
+    margin-top: 1.5rem;
 }
 
 .my-position-divider {
     border: 0;
-    border-top: 2px solid #ddd; /* 線の色 */
-    margin: 1rem 0; /* 上下の余白 */
+    border-top: 2px solid #ddd;
+    margin: 1rem 0;
 }
 
+/* ==========================================================================
+   Dark Theme Adjustments
+   ========================================================================== */
+[data-theme="dark"] {
+    --primary-light: rgba(0, 153, 136, 0.12);
+    --primary-lighter: rgba(0, 153, 136, 0.06);
+    --primary-medium: rgba(0, 153, 136, 0.18);
+    --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.25);
+    --border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] h4 {
+    color: #00bfa6;
+}
+
+[data-theme="dark"] table {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .post-content img {
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .post-content img:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .post-content a {
+    text-decoration-color: rgba(0, 191, 166, 0.3);
+}
+
+[data-theme="dark"] .post-content a:hover {
+    text-decoration-color: #00bfa6;
+}
