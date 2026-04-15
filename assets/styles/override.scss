@@ -12,6 +12,9 @@
     --secondary-color: #ddfff5;
     --text-color-light: #fff;
     --border-color: #ddd;
+    --table-bg: transparent;
+    --table-text: #334155;
+    --table-border: #e2e8f0;
     --heading-font-size-large: clamp(1.75rem, 1.5rem + 1.5vw, 2.5rem);
     --heading-font-size-medium: 1.5rem;
     --heading-font-size-small: 1.25rem;
@@ -161,19 +164,36 @@ table {
 
 table th,
 table td {
-    border: solid 1px var(--border-color);
+    border: solid 1px var(--table-border);
     padding: 0.75rem 1rem;
 }
 
 table th {
     background-color: var(--primary-color);
-    color: #fff;
+    color: #fff !important;
     font-weight: 600;
 }
 
-table tr:nth-child(even) td {
-    background-color: var(--primary-lighter);
+table tbody tr {
+    background-color: var(--table-bg) !important;
+    color: var(--table-text) !important;
 }
+
+/* Bootstrap .table override */
+.table.mvv-table {
+    --bs-table-bg: var(--table-bg);
+    --bs-table-color: var(--table-text);
+    --bs-table-border-color: var(--table-border);
+    --bs-table-hover-bg: rgba(0, 153, 136, 0.08);
+    --bs-table-accent-bg: transparent;
+}
+
+.table.mvv-table th {
+    background-color: var(--primary-color) !important;
+    color: #fff !important;
+    box-shadow: none !important;
+}
+
 
 /* Remove double borders from rounded table */
 table th + th,
@@ -302,34 +322,37 @@ table tr + tr th {
 /* ==========================================================================
    Dark Theme Adjustments
    ========================================================================== */
-[data-theme="dark"] {
+html[data-theme='dark'] {
     --primary-light: rgba(0, 153, 136, 0.12);
     --primary-lighter: rgba(0, 153, 136, 0.06);
     --primary-medium: rgba(0, 153, 136, 0.18);
     --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.25);
     --border-color: rgba(255, 255, 255, 0.1);
+    --table-bg: #1e293b;
+    --table-text: #cbd5e1;
+    --table-border: rgba(255, 255, 255, 0.08);
 }
 
-[data-theme="dark"] h4 {
+html[data-theme='dark'] h4 {
     color: #00bfa6;
 }
 
-[data-theme="dark"] table {
+html[data-theme='dark'] table {
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
 }
 
-[data-theme="dark"] .post-content img {
+html[data-theme='dark'] .post-content img {
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
 }
 
-[data-theme="dark"] .post-content img:hover {
+html[data-theme='dark'] .post-content img:hover {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
 }
 
-[data-theme="dark"] .post-content a {
+html[data-theme='dark'] .post-content a {
     text-decoration-color: rgba(0, 191, 166, 0.3);
 }
 
-[data-theme="dark"] .post-content a:hover {
+html[data-theme='dark'] .post-content a:hover {
     text-decoration-color: #00bfa6;
 }
